@@ -17,9 +17,9 @@
       "region": "France"
     },
     "profiles": [{
-    "network": "",
-    "username": "",
-    "url": ""
+    "network": "Github",
+    "username": "rfezzani",
+    "url": "https://github.com/rfezzani"
     }]
   },
   "work": [{
@@ -136,9 +136,7 @@
     "startDate": "2007-11-01",
     "endDate": "2011-01-31",
     "gpa": "4.0",
-    "courses": [
-      ""
-    ]
+    "courses": []
   },
 	{
     "institution": "University",
@@ -147,23 +145,16 @@
     "startDate": "2006-09-01",
     "endDate": "2007-06-31",
     "gpa": "4.0",
-    "courses": [
-      ""
-    ]
+    "courses": []
   }],
-  "awards": [{
-    "title": "",
-    "date": "",
-    "awarder": "",
-    "summary": ""
-  }],
+  "awards": [],
   "publications": [{
     "name": "Fine estimation of retinal vascular motions in images
              sequences acquired by an adaptive optics retinal camera",
     "publisher": "OSA Imaging and Applied Optics Congress",
     "releaseDate": "2016",
     "website": "",
-    "summary": "C. Kulcs\'a, J. Benesty, G. Le Besnerais, R. Fezzani, M. Paques."
+    "summary": "C. Kulcsa, J. Benesty, G. Le Besnerais, R. Fezzani, M. Paques."
   },
 	{
     "name": "Unsupervised registration of Adaptive Optics retinal images in SLO fundus images",
@@ -290,12 +281,7 @@
     "name": "English",
     "level": "Fluent"
   }],
-  "interests": [{
-    "name": "",
-    "keywords": [
-      ""
-    ]
-  }],
+  "interests": [],
   "references": [{
     "name": "Various",
     "reference": "Available upon request."
