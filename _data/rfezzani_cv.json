@@ -1,5 +1,4 @@
 {
-
   "basics": {
     "name": "Riadh Fezzani",
     "label": "Doctor in applied mathematics",
@@ -8,20 +7,20 @@
     "phone": "+33 6 75 86 21 97",
 		"website": "https://rfezzani.github.io",
 		"summary": "Autonomous and curious, 8 years of experience including a
-                Ph.D., I appreciate multidisciplinary environments and the
-                implementation of efficient algorithms.",
+                	Ph.D., I appreciate multidisciplinary environments and the
+                	implementation of efficient algorithms.",
     "location": {
       "address": "154 avenue Marx Dormoy",
       "postalCode": "92120",
       "city": "Montrouge",
       "countryCode": "FR",
       "region": "France"
-    }// ,
-    // "profiles": [{
-    //   "network": "Twitter",
-    //   "username": "john",
-    //   "url": "http://twitter.com/john"
-    // }]
+    },
+    "profiles": [{
+    "network": "",
+    "username": "",
+    "url": ""
+    }]
   },
   "work": [{
     "company": "Ausy",
@@ -31,91 +30,91 @@
     "endDate": "",
     "summary": "I actually work in the R&D departement of **Océ - A Canon compagny**,
                 within the **Eiger project** (2.5 and 3D high resolution printing). My
-  							mission consists in developping multiple tools for the vizualisation
-  							and the manipulation of digital 3D objects. I participated to the
+  		mission consists in developping multiple tools for the vizualisation
+  		and the manipulation of digital 3D objects. I participated to the
                 filling of Three patents.",
     "highlights": [
-				"Height map and texture generation",
-				"Mesh slicing",
-				"Mesh voxelization",
-				"Realtime visualization",
-				"Photorealism",
-				"Cutpath generation"
+	"Height map and texture generation",
+	"Mesh slicing",
+	"Mesh voxelization",
+	"Realtime visualization",
+	"Photorealism",
+	"Cutpath generation"
     ]
   },
-					 {
+	{
     "company": "Institut d'Optique Graduate School",
     "position": "Postdoctoral research",
     "website": "https://www.institutoptique.fr/",
     "startDate": "2013-06-01",
     "endDate": "2014-11-10",
     "summary": "Within the **SPIM** team in
-  							the _laboratoire Charles Fabry_, I worked in the context of
-  							the **Reveal** project in close collaboration with the
-  							**iMove** team at **ONERA**, the **Institut de la Vision** and
+		the _laboratoire Charles Fabry_, I worked in the context of
+		the **Reveal** project in close collaboration with the
+		**iMove** team at **ONERA**, the **Institut de la Vision** and
                 **Imagine Eyes** on the design of efficient
-  							algorithms for the processing of eye fundus images aquired with an
-  							adaptive optics camera",
+		algorithms for the processing of eye fundus images aquired with an
+		adaptive optics camera",
     "highlights": [
-				"Fast image registration under rigid and non-rigid motion hypothesis",
-				"Acquisition area detection via mutual information maximization",
-				"Blood vessel activity detection using residual motion estimation"
+		"Fast image registration under rigid and non-rigid motion hypothesis",
+		"Acquisition area detection via mutual information maximization",
+		"Blood vessel activity detection using residual motion estimation"
     ]
   },
-					 {
+	{
     "company": "INRIA",
     "position": "Postdoctoral research",
     "website": "http://www.inria.fr/",
     "startDate": "2011-03-01",
     "endDate": "2013-05-30",
 		"summary": "Within the **PARALL** team
-  							in the laboratoire de recherche en informatique **LRI**, I
-  							worked in the context of the **PetalH** project on the design
-  							of new parallel preconditioners made for the acceleration of the
-  							resolution of large ill-conditioned sparse linear systems",
+			in the laboratoire de recherche en informatique **LRI**, I
+			worked in the context of the **PetalH** project on the design
+			of new parallel preconditioners made for the acceleration of the
+			resolution of large ill-conditioned sparse linear systems",
     "highlights": [
-				"Sparse linear algebra",
-				"Reordering",
-				"Preconditionning",
+		"Sparse linear algebra",
+		"Reordering",
+		"Preconditionning",
 				"Domain decomposition",
 				"Iterative linear solver",
 				"approximate block LDU factorization with filtering constraints",
 				"Low-rank approximation"
     ]
   },
-					 {
+	{
     "company": "ONERA",
     "position": "Ph.D. thesis",
     "website": "http://www.onera.fr/",
     "startDate": "2007-11-01",
     "endDate": "2011-01-31",
     "summary": "In the Hight performance computing team (**DTIM/CHP**), 'Parallel
-  							approach for optical flow estimation by variational method'(Advisors:
+		approach for optical flow estimation by variational method'(Advisors:
                 Frédéric _Champagnat_ and François-Xavier _Roux_).",
     "highlights": [
-				"Combined local gloal approach",
-				"Total variation",
-				"Picard/SOR solver",
-				"Color labeling",
-				"Variable splitting",
-				"High performance computing",
-				"**PIV**"
+		"Combined local gloal approach",
+		"Total variation",
+		"Picard/SOR solver",
+		"Color labeling",
+		"Variable splitting",
+		"High performance computing",
+		"**PIV**"
     ]
   },
-					 {
+	{
     "company": "CERFACS",
     "position": "Internship",
     "website": "http://cerfacs.fr/en/",
     "startDate": "2007-04-01",
     "endDate": "2007-09-30",
     "summary": "In the parallel algorithms team, in collaboration with The innovative
-  							Computing Laboratory (**ICL**) from the university of
-  							Tennessee: 'Study of the parallelization of the $LDL^T$
-  							factorization in the symmetric indefinite case' (Advisor: Marc _Baboulin_)",
+		Computing Laboratory (**ICL**) from the university of
+		Tennessee: 'Study of the parallelization of the $LDL^T$
+		factorization in the symmetric indefinite case' (Advisor: Marc _Baboulin_)",
     "highlights": [
-				"Dense Linear Algebra",
-				"Direct linear solver",
-				"LDL^T factorization"
+		"Dense Linear Algebra",
+		"Direct linear solver",
+		"LDL^T factorization"
     ]
   }],
   "volunteer": [{
@@ -126,8 +125,8 @@
     "endDate": "",
     "summary": "",
     "highlights": [
-				"Champion Ile-de-France Promotion honneur 2015",
-				"Finaliste Coupe Ile-de-France 2008"
+		"Champion Ile-de-France Promotion honneur 2015",
+		"Finaliste Coupe Ile-de-France 2008"
     ]
   }],
   "education": [{
@@ -141,7 +140,7 @@
       ""
     ]
   },
-								{
+	{
     "institution": "University",
     "area": "Mathematical modeling and computer science",
     "studyType": "M.D.",
@@ -152,12 +151,12 @@
       ""
     ]
   }],
-  // "awards": [{
-  //   "title": "Award",
-  //   "date": "2014-11-01",
-  //   "awarder": "Company",
-  //   "summary": "There is no spoon."
-  // }],
+  "awards": [{
+    "title": "",
+    "date": "",
+    "awarder": "",
+    "summary": ""
+  }],
   "publications": [{
     "name": "Fine estimation of retinal vascular motions in images
              sequences acquired by an adaptive optics retinal camera",
@@ -166,56 +165,56 @@
     "website": "",
     "summary": "C. Kulcs\'a, J. Benesty, G. Le Besnerais, R. Fezzani, M. Paques."
   },
-									 {
+	{
     "name": "Unsupervised registration of Adaptive Optics retinal images in SLO fundus images",
     "publisher": "The association for research in vision and ophtalmology meeting",
     "releaseDate": "2014",
     "website": "",
     "summary": "R. Fezzani, P. Cornic, E. Boyenga Ödlund, A. Plyer, G. Le Besnerais, C. Kulcsar."
   },
-									 {
+	{
     "name": "Traitement rapide et robuste d'images issues d'une caméra rétinienne",
     "publisher": "6ème édition des Journées Recherche Industrie de l'Optique Adaptative",
     "releaseDate": "2013",
     "website": "",
     "summary": "R. Fezzani, C. Kulcsar, G. Le Besnerais, A. Plyer and E. Boyenga Ödlund."
   },
-									 {
+	{
     "name": "Using Overlapping and Filtering Techniques for Highly Parallel Preconditioners",
     "publisher": "SIAM Conference on Parallel Processing for Scientific Computing",
     "releaseDate": "2012",
     "website": "",
     "summary": "L. Grigori, F. Nataf, R. Fezzani."
   },
-									 {
+	{
     "name": "Sparse/Low-rank Block Filtering Decomposition",
     "publisher": "7th International Workshop on Parallel Matrix Algorithms and Applications",
     "releaseDate": "2012",
     "website": "",
     "summary": "R. Fezzani, L. Grigori, F. Nataf."
   },
-									 {
+	{
     "name": "Block Filtering Decomposition",
     "publisher": "Numerical Linear Algebra with Applications",
     "releaseDate": "2014",
     "website": "",
     "summary": "R. Fezzani, L. Grigori, F. Nataf, K. Wang."
   },
-									 {
+	{
     "name": "Approche parallèle pour l'estimation du flot optique par méthode variationnelle",
     "publisher": "Pierre and Marie Curie University",
     "releaseDate": "2011",
     "website": "",
     "summary": "Ph.D thesis in applied mathematic"
   },
-									 {
+	{
     "name": "Combined local-global approach in PIV processing: a better trade-off between noise and resolution",
     "publisher": "9th International symposium on particle image velocimetry",
     "releaseDate": "2011",
     "website": "",
     "summary": "R. Fezzani, F. Champagnat, G. Le Besnerais, B. Leclaire, S. Davoust, Y. Le Sant."
   },
-									 {
+	{
     "name": "Clarifying the implementation of warping in the combined 
              local global method for optic flow computation",
     "publisher": "18th European Signal Processing Conference",
@@ -223,7 +222,7 @@
     "website": "",
     "summary": "R. Fezzani, F. Champagnat, G. Le Besnerais."
   },
-									 {
+	{
     "name": "Advanced processing methods for image-based displacement measurement",
     "publisher": "Aerospace Lab Journal, num. 1",
     "releaseDate": "2009",
@@ -231,75 +230,75 @@
     "summary": "G. Le Besnerais, F. Champagnat, A. plyer, R. Fezzani, B. Leclaire, Y. Le Sant."
   }],
   "skills": [{
-    "name": "Programming",
-    "level": "Expert",
-			"keywords": [
-					"C/C++",
-					"Python",
-					"Matlab",
-					"HTML/javascript"]
+	"name": "Programming",
+    	"level": "Expert",
+	"keywords": [
+		"C/C++",
+		"Python",
+		"Matlab",
+		"HTML/javascript"]
   },
-						 {
-    "name": "High performance computing",
-    "level": "Expert",
-			"keywords": [
-					"openMP",
-					"CUDA",
-					"Metis"]
-  },{
-    "name": "Image processing",
-    "level": "Expert",
-			"keywords": [
-					"Optical flow",
-					"Image registration",
-					"Template matching",
-					"openCV",
-					"Matplotlib",
-					"scikit-image"]
+	{
+	"name": "High performance computing",
+    	"level": "Expert",
+	"keywords": [
+		"openMP",
+		"CUDA",
+		"Metis"]
   },
-						 {
-    "name": "Linear algebra",
-    "level": "Expert",
-			"keywords": [
-					"Dense and sparse systems",
-					"Direct and iterative solvers",
-					"Preconditionning",
-					"Low-rank approximation",
-					"BLAS",
-					"LAPACK",
-					"Scipy"]
+	{
+	"name": "Image processing",
+    	"level": "Expert",
+	"keywords": [
+		"Optical flow",
+		"Image registration",
+		"Template matching",
+		"openCV",
+		"Matplotlib",
+		"scikit-image"]
   },
-						 {
-    "name": "3D",
-    "level": "Expert",
-			"keywords": [
-					"Ray tracing",
-					"VTK",
-					"openGL/GLSL",
-					"Blender"]
+	{
+	"name": "Linear algebra",
+    	"level": "Expert",
+	"keywords": [
+		"Dense and sparse systems",
+		"Direct and iterative solvers",
+		"Preconditionning",
+		"Low-rank approximation",
+		"BLAS",
+		"LAPACK",
+		"Scipy"]
+  },
+	{
+	"name": "3D",
+	"level": "Expert",
+	"keywords": [
+		"Ray tracing",
+		"VTK",
+		"openGL/GLSL",
+		"Blender"]
   }],
   "languages": [{
     "name": "French",
     "level": "Native speaker"
   },
-								{
+	{
     "name": "Arabic",
     "level": "Native speaker"
   },
-								{
+	{
     "name": "English",
     "level": "Fluent"
-  }]// ,
-  // "interests": [{
-  //   "name": "Wildlife",
-  //   "keywords": [
-  //     "Ferrets",
-  //     "Unicorns"
-  //   ]
-  // }],
-  // "references": [{
-  //   "name": "Jane Doe",
-  //   "reference": "Reference..."
-  // }]
+  }],
+  "interests": [{
+    "name": "",
+    "keywords": [
+      ""
+    ]
+  }],
+  "references": [{
+    "name": "Various",
+    "reference": "Available upon request."
+  }]
 
 }
