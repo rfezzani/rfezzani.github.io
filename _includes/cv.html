@@ -61,20 +61,26 @@
       {% if work.company %}
       <section id="{{work.company}}">
         <h4 class="title">
-          {{work.company}}
+          {{work.company | markdownify}}
           <span class="date">
+            {% if work.endDate %}
             {% if work.startDate %}
             <span class="start-date">
               {{ work.startDate | date: "%B %Y" }} -
             </span>
             {% endif %}
-            {% if work.endDate %}
             <span class="end-date">
-              {{ work.endDate | date: "%B %Y" }}
+            {{ work.endDate | date: "%B %Y" }}
             </span>
             {% else %}
             <span class="end-date">
-              {{locale.present}}
+              {% if work.startDate %}
+              <span class="start-date">
+              {{locale.since}} {{ work.startDate | date: "%B %Y" }} -
+            </span>
+            {% endif %}
+            
+              {{locale.actually}}
             </span>
             {% endif %}
           </span>
@@ -103,7 +109,7 @@
       {% if work.highlights != empty %}
       <ul class="highlights">
         {% for highlight in work.highlights %}
-        <li>{{highlight}}</li>
+        <li>{{highlight | markdownify}}</li>
         {% endfor %}
       </ul>
       {% endif %}
