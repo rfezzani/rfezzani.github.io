@@ -30,7 +30,7 @@
 						"position": "Engineer",
 						"website": "http://www.ausy.fr/fr",
 						"startDate": "2014-11-13",
-						"endDate": "",
+						"endDate": null,
 						"summary": "I actually work in the R&D departement of **Océ - A Canon compagny**,
                         within the **Eiger project** (large format **2.5D** and **3D**
                         high resolution printing). My work consists
@@ -48,7 +48,7 @@
 						]
 				},
 				{
-						"company": "<abbr title=\"Institut d Optique Graduate School\">IOGS</abbr>",
+						"company": "<abbr title=\"Institut d&#39;Optique Graduate School\">IOGS</abbr>",
 						"position": "Postdoctoral research",
 						"website": "https://www.institutoptique.fr/",
 						"startDate": "2013-06-01",
@@ -68,13 +68,13 @@
 						]
 				},
 				{
-						"company": "<abbr title=\"Institut National de Recherche en Informatique et en Automatique\">INRIA<\/abbr>",
+						"company": "<abbr title=\"Institut National de Recherche en Informatique et en Automatique\">INRIA</abbr>",
 						"position": "Postdoctoral research",
 						"website": "http://www.inria.fr/",
 						"startDate": "2011-03-01",
 						"endDate": "2013-05-30",
 						"summary": "Within the **PARALL** team in the <abbr title=\"Laboratoire de
-                        recherche en informatique\">LRI<\/abbr>, I
+                        recherche en informatique\">LRI</abbr>, I
                         worked in the context of the **PetalH**
                         project on the design of new parallel
                         preconditioners made for the acceleration of
@@ -91,11 +91,11 @@
 						]
 				},
 				{
-						"company": "<abbr title=\"Office Nationale d&#39;Étude et de Recherches Aérospatiales\">ONERA<\/abbr>", "position":
+						"company": "<abbr title=\"Office Nationale d&#39;Étude et de Recherches Aérospatiales\">ONERA</abbr>", "position":
 						"Ph.D. thesis", "website": "http://www.onera.fr/",
 						"startDate": "2007-11-01", "endDate": "2011-01-31",
 						"summary": "In the hight performance computing team (<abbr
-						title=\"Département du Traitrement de l&#39;Information et Modélisation/ Calcul Haute Performance\">DTIM/CHP<\/abbr>), \"Parallel approach for optical flow estimation by variational method\" (Advisors: Frédéric
+						title=\"Département du Traitrement de l&#39;Information et Modélisation/ Calcul Haute Performance\">DTIM/CHP</abbr>), \"Parallel approach for optical flow estimation by variational method\" (Advisors: Frédéric
 _Champagnat_ and François-Xavier _Roux_).",
 						"highlights": [
 								"Combined local gloal approach",
@@ -108,14 +108,14 @@ _Champagnat_ and François-Xavier _Roux_).",
 						]
 				},
 				{
-						"company": "<abbr title=\"Centre Européen de Recherche et de Formation Avancée en Calcul Scientifique\">CERFACS<\/abbr>",
+						"company": "<abbr title=\"Centre Européen de Recherche et de Formation Avancée en Calcul Scientifique\">CERFACS</abbr>",
 						"position": "Internship",
 						"website": "http://cerfacs.fr/en/",
 						"startDate": "2007-04-01",
 						"endDate": "2007-09-30",
 						"summary": "In the parallel algorithms team, in collaboration with <abbr
                         title=\"The Innovative Computing
-                        Laboratory\">ICL<\/abbr> from the university of
+                        Laboratory\">ICL</abbr> from the university of
                         Tennessee: \"Study of the parallelization of
                         the \\(LDL^T\\) factorization in the symmetric
                         indefinite case\" (Advisor: Marc _Baboulin_)",
@@ -128,7 +128,7 @@ _Champagnat_ and François-Xavier _Roux_).",
 		],
 		"volunteer": [
 				{
-						"organization": "<abbr title=\"Club Olympique Multisports de Bagneux\">COMB Rugby<\/abbr>",
+						"organization": "<abbr title=\"Club Olympique Multisports de Bagneux\">COMB Rugby</abbr>",
 						"position": "Rugby coach",
 						"website": "http://www.combagneux.fr/sections/rugby/rugby.html",
 						"startDate": "2007",
