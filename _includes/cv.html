@@ -86,7 +86,7 @@
       <!--/section-->
       {% endif %}
 
-      {% if website %}
+      {% if work.website %}
       <div class="website">
         <a href="{{work.website}}">{{work.website}}</a>
       </div>
@@ -271,9 +271,9 @@
   <div class="row">
     {% for language in resume.languages %}
     <div class="col-sm-4">
-      {% if language.language %}
+      {% if language.name %}
       <span class="language">
-        <strong>{{language.language}}:</strong>
+        <strong>{{language.name}}:</strong>
       </span>
       {% endif %}
       {% if language.fluency %}
