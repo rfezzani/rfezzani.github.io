@@ -1,10 +1,9 @@
 # Site settings
 title: Riadh fezzani
-email: 
-description: "Riadh Fezzani curriculum vitae. Doctor in applied mathematics."
+email: rfezzani@gmail.com
+description: Riadh Fezzani, Doctor in applied mathematics.
 baseurl: ""
-url: "https://rfezzani.github.io"
-twitter_username: 
+url: https://rfezzani.github.io
 github_username:  rfezzani
 
 # Build settings
