@@ -48,7 +48,7 @@
 						]
 				},
 				{
-						"company": "<abbr title=\"Institut d'Optique Graduate School\">IOGS<\/abbr>",
+						"company": "<abbr title=\"Institut d&#39;Optique Graduate School\">IOGS<\/abbr>",
 						"position": "Postdoctoral research",
 						"website": "https://www.institutoptique.fr/",
 						"startDate": "2013-06-01",
@@ -91,11 +91,11 @@
 						]
 				},
 				{
-						"company": "<abbr title=\"Office Nationale d'Étude et de Recherches Aérospatiales\">ONERA<\/abbr>", "position":
+						"company": "<abbr title=\"Office Nationale d&#39;Étude et de Recherches Aérospatiales\">ONERA<\/abbr>", "position":
 						"Ph.D. thesis", "website": "http://www.onera.fr/",
 						"startDate": "2007-11-01", "endDate": "2011-01-31",
 						"summary": "In the hight performance computing team (<abbr
-						title=\"Département du Traitrement de l'Information et Modélisation/ Calcul Haute Performance\">DTIM/CHP<\/abbr>), \"Parallel approach for optical flow estimation by variational method\" (Advisors: Frédéric
+						title=\"Département du Traitrement de l&#39;Information et Modélisation/ Calcul Haute Performance\">DTIM/CHP<\/abbr>), \"Parallel approach for optical flow estimation by variational method\" (Advisors: Frédéric
 _Champagnat_ and François-Xavier _Roux_).",
 						"highlights": [
 								"Combined local gloal approach",
@@ -116,9 +116,9 @@ _Champagnat_ and François-Xavier _Roux_).",
 						"summary": "In the parallel algorithms team, in collaboration with <abbr
                         title=\"The Innovative Computing
                         Laboratory\">ICL<\/abbr> from the university of
-                        Tennessee: 'Study of the parallelization of
+                        Tennessee: \"Study of the parallelization of
                         the \\(LDL^T\\)$ factorization in the symmetric
-                        indefinite case' (Advisor: Marc _Baboulin_)",
+                        indefinite case\"" (Advisor: Marc _Baboulin_)",
 						"highlights": [
 								"Dense Linear Algebra",
 								"Direct linear solver",
@@ -175,8 +175,8 @@ _Champagnat_ and François-Xavier _Roux_).",
 						"summary": ""
 				},
 				{
-						"name": "Traitement rapide et robuste d'images issues d'une caméra rétinienne",
-						"publisher": "6ème édition des Journées Recherche Industrie de l'Optique Adaptative",
+						"name": "Traitement rapide et robuste d&#39;images issues d&#39;une caméra rétinienne",
+						"publisher": "6ème édition des Journées Recherche Industrie de l&#39;Optique Adaptative",
 						"releaseDate": "2013",
 						"website": "",
 						"authors": "R. Fezzani, C. Kulcsar, G. Le Besnerais, A. Plyer and E. Boyenga Ödlund.",
@@ -207,7 +207,7 @@ _Champagnat_ and François-Xavier _Roux_).",
 						"summary": ""
 				},
 				{
-						"name": "Approche parallèle pour l'estimation du flot optique par méthode variationnelle",
+						"name": "Approche parallèle pour l&#39;estimation du flot optique par méthode variationnelle",
 						"publisher": "Pierre and Marie Curie University",
 						"releaseDate": "2011",
 						"website": "",
