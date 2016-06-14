@@ -17,4 +17,8 @@ layout: default
 
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
+	{% assign resume = site.data.rfezzani_cv %}
+	{% assign locale = site.data.locales.en %}
+
+	{% include resume.html %}
 </div>
