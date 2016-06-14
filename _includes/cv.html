@@ -59,7 +59,7 @@
     {% for work in resume.work %}
     <div class="entry">
       {% if work.company %}
-      <section id="{{work.company}}">
+      <section id="{{work.company | markdownify}}">
         <h4 class="title">
           {{work.company | markdownify}}
           <span class="date">
@@ -73,15 +73,13 @@
             {{ work.endDate | date: "%B %Y" }}
             </span>
             {% else %}
-            <span class="end-date">
               {% if work.startDate %}
-              <span class="start-date">
-              {{locale.since}} {{ work.startDate | date: "%B %Y" }} -
-            </span>
-            {% endif %}
-            
-              {{locale.actually}}
-            </span>
+                <span class="start-date">
+                  {{locale.since}} {{ work.startDate | date: "%B %Y" }} -
+                </span>
+              {% else %}
+                {{locale.actually}}
+              {% endif %}
             {% endif %}
           </span>
         </h4>
