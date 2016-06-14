@@ -59,7 +59,7 @@
     {% for work in resume.work %}
     <div class="entry">
       {% if work.company %}
-      <section id="{{work.company | markdownify}}">
+      <!--section id="{{work.company}}"-->
         <h4 class="title">
           {{work.company | markdownify}}
           <span class="date">
@@ -83,7 +83,7 @@
             {% endif %}
           </span>
         </h4>
-      </section>
+      <!--/section-->
       {% endif %}
 
       {% if website %}
