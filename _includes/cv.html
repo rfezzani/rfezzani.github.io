@@ -96,7 +96,7 @@
 
       {% if work.summary %}
       <div class="summary">
-        <p>{{work.summary}}</p>
+        <p>{{work.summary | markdownify}}</p>
       </div>
       {% endif %}
 
