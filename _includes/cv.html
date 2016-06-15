@@ -117,12 +117,12 @@
 {% endif %}
 
 {% if resume.volunteer != empty %}
-  <section id="projects">
+  <section id="volunteer">
     <h3 class="underlined">{{locale.volunteer}}</h3>
     {% for volunteer in resume.volunteer %}
     <div class="entry">
       {% if volunteer.organization %}
-      <section id="{{volunteer.organization}}">
+      <!-- <section id="{{volunteer.organization}}"> -->
         <h4 class="title">
           {{volunteer.organization | markdownify}}
           <span class="date">
@@ -142,7 +142,7 @@
             {% endif %}
           </span>
         </h4>
-      </section>
+      <!-- </section> -->
       {% endif %}
 
       {% if website %}
