@@ -124,7 +124,7 @@
       {% if volunteer.organization %}
       <section id="{{volunteer.organization}}">
         <h4 class="title">
-          {{volunteer.organization}}
+          {{volunteer.organization | markdownify}}
           <span class="date">
             {% if volunteer.startDate %}
             <span class="start-date">
