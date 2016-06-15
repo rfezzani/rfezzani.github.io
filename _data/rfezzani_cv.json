@@ -53,13 +53,15 @@
 						"website": "https://www.institutoptique.fr/",
 						"startDate": "2013-06-01",
 						"endDate": "2014-11-10",
-						"summary": "Within the **SPIM** team in the _laboratoire Charles Fabry_, I worked
-                        in the context of the **Reveal** project in
-                        close collaboration with the **iMove** team at
-                        **ONERA**, the **Institut de la Vision** and
-                        **Imagine Eyes** on the design of efficient
-                        algorithms for the processing of eye fundus
-                        images aquired with an adaptive optics camera",
+						"summary": "Within the <abbr title=\"Systèmes d&#39;Imagerie et Physique des
+                        Images\">SPIM</abbr> team in the _laboratoire
+                        Charles Fabry_, I worked in the context of the
+                        **Reveal** project in close collaboration with
+                        the **iMove** team at **ONERA**, the
+                        **Institut de la Vision** and **Imagine Eyes**
+                        on the design of efficient algorithms for the
+                        processing of eye fundus images aquired with
+                        an adaptive optics camera",
 						"highlights": [
 								"Fast image registration under",
 								"Acquisition area detection",
@@ -68,7 +70,8 @@
 						]
 				},
 				{
-						"company": "<abbr title=\"Institut National de Recherche en Informatique et en Automatique\">INRIA</abbr>",
+						"company": "<abbr title=\"Institut National de Recherche en Informatique et en
+                        Automatique\">INRIA</abbr>",
 						"position": "Postdoctoral research",
 						"website": "http://www.inria.fr/",
 						"startDate": "2011-03-01",
@@ -91,12 +94,17 @@
 						]
 				},
 				{
-						"company": "<abbr title=\"Office Nationale d&#39;Étude et de Recherches Aérospatiales\">ONERA</abbr>", "position":
+						"company": "<abbr title=\"Office Nationale d&#39;Étude et de Recherches
+                        Aérospatiales\">ONERA</abbr>", "position":
 						"Ph.D. thesis", "website": "http://www.onera.fr/",
 						"startDate": "2007-11-01", "endDate": "2011-01-31",
-						"summary": "In the hight performance computing team (<abbr
-						title=\"Département du Traitrement de l&#39;Information et Modélisation/ Calcul Haute Performance\">DTIM/CHP</abbr>), \"Parallel approach for optical flow estimation by variational method\" (Advisors: Frédéric
-_Champagnat_ and François-Xavier _Roux_).",
+						"summary": "In the hight performance computing team (<abbr title=\"Département du
+						            Traitrement de l&#39;Information et
+						            Modélisation/ Calcul Haute
+						            Performance\">DTIM/CHP</abbr>), \"Parallel
+						            approach for optical flow estimation by
+						            variational method\" (Advisors: Frédéric
+						            _Champagnat_ and François-Xavier _Roux_).",
 						"highlights": [
 								"Combined local gloal approach",
 								"Total variation",
@@ -108,7 +116,8 @@ _Champagnat_ and François-Xavier _Roux_).",
 						]
 				},
 				{
-						"company": "<abbr title=\"Centre Européen de Recherche et de Formation Avancée en Calcul Scientifique\">CERFACS</abbr>",
+						"company": "<abbr title=\"Centre Européen de Recherche et de Formation Avancée en
+                        Calcul Scientifique\">CERFACS</abbr>",
 						"position": "Internship",
 						"website": "http://cerfacs.fr/en/",
 						"startDate": "2007-04-01",
@@ -122,7 +131,7 @@ _Champagnat_ and François-Xavier _Roux_).",
 						"highlights": [
 								"Dense Linear Algebra",
 								"Direct linear solver",
-								"(\\LDL^T\\) factorization"
+								"\\(LDL^T\\) factorization"
 						]
 				}
 		],

@@ -64,26 +64,26 @@
           {{work.company | markdownify}}
           <span class="date">
             {% if work.endDate %}
-            {% if work.startDate %}
-            <span class="start-date">
-              {{ work.startDate | date: "%B %Y" }} -
-            </span>
-            {% endif %}
-            <span class="end-date">
-            {{ work.endDate | date: "%B %Y" }}
-            </span>
-            {% else %}
               {% if work.startDate %}
                 <span class="start-date">
-                  {{locale.since}} {{ work.startDate | date: "%B %Y" }} -
+                  {{ work.startDate | date: "%B %Y" }} -
                 </span>
-              {% else %}
-                {{locale.actually}}
               {% endif %}
+							<span class="end-date">
+								{{ work.endDate | date: "%B %Y" }}
+							</span>
+						{% else %}
+							{% if work.startDate %}
+							  <span class="start-date">
+									{{locale.since}} {{ work.startDate | date: "%B %Y" }}
+								</span>
+							{% else %}
+								{{locale.actually}}
+							{% endif %}
             {% endif %}
           </span>
         </h4>
-      <!--/section-->
+				<!--/section-->
       {% endif %}
 
       {% if work.website %}
@@ -118,7 +118,7 @@
 
 {% if resume.volunteer != empty %}
   <section id="projects">
-    <h3 class="underlined">{{locale.projects}}</h3>
+    <h3 class="underlined">{{locale.volunteer}}</h3>
     {% for volunteer in resume.volunteer %}
     <div class="entry">
       {% if volunteer.organization %}
@@ -311,19 +311,47 @@
 </section>
 {% endif %}
 
-{% if resume.references != empty %}
-<section id="references">
-  <h3 class="underlined">{{locale.references}}</h3>
-  {% for reference in resume.references %}
-  <div class="item">
-    {% if reference.reference %}
-    <blockquote class="reference">
-      {{reference.reference}}
-    </blockquote>
+<!-- {% if resume.references != empty %} -->
+<!-- <section id="references"> -->
+<!--   <h3 class="underlined">{{locale.references}}</h3> -->
+<!--   {% for reference in resume.references %} -->
+<!--   <div class="item"> -->
+<!--     {% if reference.reference %} -->
+<!--     <blockquote class="reference"> -->
+<!--       {{reference.reference}} -->
+<!--     </blockquote> -->
+<!--     {% endif %} -->
+<!--     {% if reference.name %} -->
+<!--     <div class="name"> -->
+<!--       — {{reference.name}} -->
+<!--     </div> -->
+<!--     {% endif %} -->
+<!--   </div> -->
+<!--   {% endfor %} -->
+<!-- </section> -->
+<!-- {% endif %} -->
+
+{% if resume.publications != empty %}
+<section id="publications">
+  <h3 class="underlined">{{locale.publication}}</h3>
+  {% for publi in resume.publications %}
+  <div class="publi">
+    {% if publi.title %}
+    <div class="title">
+      {{publi.title}}
+    </div>
     {% endif %}
-    {% if reference.name %}
-    <div class="name">
-      — {{reference.name}}
+    {% if publi.authors %}
+    <div class="author">
+      {{publi.authors}}
+    </div>
+    {% endif %}
+    {% if publi.publisher %}
+    <div class="publisher">
+      Published in {{publi.publisher}} 
+			{% if publi.releaseDate %}
+			({{ publi.releaseDate | date: "%Y" }})
+			{% endif %}
     </div>
     {% endif %}
   </div>
