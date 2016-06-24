@@ -321,10 +321,5 @@
 				}
 		],
 		"interests": [],
-		"references": [
-				{
-						"name": "Various",
-						"reference": "Available upon request."
-				}
-		]
+		"references": []
 }
