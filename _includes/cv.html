@@ -1,851 +1,488 @@
-
-			<section class="col-md-3 card-wrapper profile-card-wrapper affix">
-				<div class="card profile-card">
-					<span class="profile-pic-container">
-						<div class="profile-pic">
-							<img data-src="holder.js/100x100"
-									 alt="{{ resume.basics.name }}"
-									 src="//www.gravatar.com/avatar/9acdb04e603c1cac2b893190f6dd5911?s=100&amp;r=pg&amp;d=mm"
-									 itemprop="image"
-									 class="media-object img-circle center-block"/>
-						</div>
-						<div class="name-and-profession text-center">
-							{% if resume.basics.name %}
-							<h3 itemprop="name"><b>{{ resume.basics.name }}</b> </h3>
-							{% endif %}
-							{% if resume.basics.label %}
-							<h5 itemprop="jobTitle" class="text-muted">{{ resume.basics.label }}</h5>
-							{% endif %}
-						</div>
-					</span>
-					<hr/>
-					<div class="contact-details clearfix">
-						{% if resume.basics.location %}
-						<div class="detail">
-							<span class="icon">
-								<i class="icon fs-lg icon-location"></i>
-							</span>
-							<span class="info">
-								{{ resume.basics.location.address }},
-								{{ resume.basics.location.postalCode }},
-								{{ resume.basics.location.city }}.
-								{{ resume.basics.location.region }}
-							</span>
-						</div>
-						{% endif %}
-						{% if resume.basics.phone %}
-						<div class="detail">
-							<span class="icon">
-								<i class="icon fs-lg icon-phone"></i>
-							</span>
-							<span itemprop="telephone" class="info">
-								{{ resume.basics.phone }}
-							</span>
-						</div>
-						{% endif %}
-						{% if resume.basics.email %}
-						<div class="detail">
-							<span class="icon">
-								<i class="icon fs-lg icon-mail"></i>
-							</span>
-							<span class="info">
-								{{ resume.basics.email }}
-								<!-- <a href="/cdn-cgi/l/email-protection#52203b313a3320367c3a373c36203b3921123f333b3e7c313d3f" -->
-								<!-- 	 itemprop="email" class="link-disguise"> -->
-								<!-- 	<span class="__cf_email__" -->
-								<!-- 				data-cfemail="f3819a909b928197dd9b969d97819a9880b39e929a9fdd909c9e"> -->
-								<!-- 		[email&#160;protected] -->
-								<!-- 	</span> -->
-								<!-- 	<script data-cfhash='f9e31' -->
-								<!-- 					type="text/javascript"> /* <![CDATA[ -->
-								<!-- 		*/!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return -->
-								<!-- 		t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* -->
-								<!-- 		]]> */ -->
-								<!-- 	</script> -->
-								<!-- </a> -->
-							</span>
-						</div>
-						{% endif %}
-						{% if resume.basics.website %}
-						<div class="detail">
-							<span class="icon">
-								<i class="icon fs-lg icon-link"></i>
-							</span>
-							<span class="info">
-								<a href="{{ resume.basics.website}}"
-									 target="_blank">{{ resume.basics.website }}</a>
-							</span>
-						</div>
-						{% endif %}
-						{% if resume.languages != empty %}
-						<div class="detail">
-							<span title="Languages I speak"
-										class="icon">
-								<i class="icon fs-lg icon-language"></i>
-							</span>
-							<span class="info">
-								{% for language in resume.languages %}
-								  {% if language.name %}
-								    {{ language.name }}
-								  {% endif %}
-								{% endfor %}
-							</span>
-						</div>
-					</div>
-					{% endif %}
-					<hr/>
-					{% if resume.basics.profiles != empty %}
-					<div class="social-links text-center">
-						<div>
-							{% for profile in resume.basics.profiles %}
-							{% if profile.network == "Twitter" %}
-							<a href="{{ profile.url }}"
-								 target="_blank" data-toggle="tooltip" title="Twitter" class="fs-2x social-link
-								 link-twitter icon-twitter">
-							</a>
-							{% endif %}
-							{% if profile.network == "Github" %}
-							<a href="{{ profile.url }}"
-								 target="_blank" data-toggle="tooltip" title="Github" class="fs-2x social-link
-								 link-github icon-github">
-							{% endif %}
-							</a>
-							{% endfor %}
-						</div>
-					</div>
-					{% endif %}
+<section class="col-md-3 card-wrapper profile-card-wrapper affix">
+	<div class="card profile-card">
+		<span class="profile-pic-container">
+			<div class="profile-pic">
+				<img data-src="holder.js/100x100"
+						 alt="{{ resume.basics.name }}"
+						 src="//www.gravatar.com/avatar/9acdb04e603c1cac2b893190f6dd5911?s=100&amp;r=pg&amp;d=mm"
+						 itemprop="image"
+						 class="media-object img-circle center-block"/>
+			</div>
+			<div class="name-and-profession text-center">
+				{% if resume.basics.name %}
+				<h3 itemprop="name"><b>{{ resume.basics.name }}</b> </h3>
+				{% endif %}
+				{% if resume.basics.label %}
+				<h5 itemprop="jobTitle" class="text-muted">{{ resume.basics.label }}</h5>
+				{% endif %}
+			</div>
+		</span>
+		<hr/>
+		<div class="contact-details clearfix">
+			{% if resume.basics.location %}
+			<div class="detail">
+				<span class="icon">
+					<i class="icon fs-lg icon-location"></i>
+				</span>
+				<span class="info">
+					{{ resume.basics.location.address }},
+					{{ resume.basics.location.postalCode }},
+					{{ resume.basics.location.city }}.
+					{{ resume.basics.location.region }}
+				</span>
+			</div>
+			{% endif %}
+			{% if resume.basics.phone %}
+			<div class="detail">
+				<span class="icon">
+					<i class="icon fs-lg icon-phone"></i>
+				</span>
+				<span itemprop="telephone" class="info">
+					{{ resume.basics.phone }}
+				</span>
+			</div>
+			{% endif %}
+			{% if resume.basics.email %}
+			<div class="detail">
+				<span class="icon">
+					<i class="icon fs-lg icon-mail"></i>
+				</span>
+				<span class="info">
+					{{ resume.basics.email }}
+					<!-- <a href="/cdn-cgi/l/email-protection#52203b313a3320367c3a373c36203b3921123f333b3e7c313d3f" -->
+					<!-- 	 itemprop="email" class="link-disguise"> -->
+					<!-- 	<span class="__cf_email__" -->
+					<!-- 				data-cfemail="f3819a909b928197dd9b969d97819a9880b39e929a9fdd909c9e"> -->
+					<!-- 		[email&#160;protected] -->
+					<!-- 	</span> -->
+					<!-- 	<script data-cfhash='f9e31' -->
+					<!-- 					type="text/javascript"> /* <![CDATA[ -->
+					<!-- 		*/!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return -->
+					<!-- 		t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* -->
+					<!-- 		]]> */ -->
+					<!-- 	</script> -->
+					<!-- </a> -->
+				</span>
+			</div>
+			{% endif %}
+			{% if resume.basics.website %}
+			<div class="detail">
+				<span class="icon">
+					<i class="icon fs-lg icon-link"></i>
+				</span>
+				<span class="info">
+					<a href="{{ resume.basics.website}}"
+						 target="_blank">{{ resume.basics.website }}</a>
+				</span>
+			</div>
+			{% endif %}
+			{% if resume.languages != empty %}
+			<div class="detail">
+				<span title="Languages I speak"
+							class="icon">
+					<i class="icon fs-lg icon-language"></i>
+				</span>
+				<span class="info">
+					{% for language in resume.languages %}
+					  {% if language.name %}
+					    {{ language.name }}
+					  {% endif %}
+					{% endfor %}
+				</span>
+			</div>
+		</div>
+		{% endif %}
+		<hr/>
+		{% if resume.basics.profiles != empty %}
+		<div class="social-links text-center">
+			<div>
+				{% for profile in resume.basics.profiles %}
+				{% if profile.network == "Twitter" %}
+				<a href="{{ profile.url }}"
+					 target="_blank" data-toggle="tooltip" title="Twitter" class="fs-2x social-link
+					 link-twitter icon-twitter">
+				</a>
+				{% endif %}
+				{% if profile.network == "Github" %}
+				<a href="{{ profile.url }}"
+					 target="_blank" data-toggle="tooltip" title="Github" class="fs-2x social-link
+					 link-github icon-github">
+				{% endif %}
+				</a>
+				{% endfor %}
+			</div>
+		</div>
+		{% endif %}
+	</div>
+</section>
+<section class="col-md-9 card-wrapper pull-right">
+	<div class="card background-card">
+		<h4 class="text-uppercase">Background</h4>
+		<hr/>
+		<div class="background-details">
+			{% if resume.basics.summary %}
+			<div id="about"	class="detail">
+				<div class="icon">
+					<i class="fs-lg icon-board"></i>
+					<span class="mobile-title">About</span>
 				</div>
-			</section>
-			<section class="col-md-9 card-wrapper pull-right">
-				<div class="card background-card">
-					<h4 class="text-uppercase">Background</h4>
-					<hr/>
-					<div class="background-details">
-						{% if resume.basics.summary %}
-						<div id="about"	class="detail">
-							<div class="icon">
-								<i class="fs-lg icon-board"></i>
-								<span class="mobile-title">About</span>
+				<div class="info">
+					<h4 class="title text-uppercase">About</h4>
+					<div class="card card-nested">
+						<div itemprop="description"
+								 class="content mop-wrapper">
+							<p>{{ resume.basics.summary }}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endif %}
+			{% if resume.work != empty %}
+			<div id="work-experience" class="detail">
+				<div class="icon">
+					<i class="fs-lg icon-office"></i>
+					<span class="mobile-title">Work Experience</span>
+				</div>
+				<div class="info">
+					<h4 class="title text-uppercase">Work Experience</h4>
+					{% for work in resume.work %}
+					<ul class="list-unstyled clear-margin">
+						<li class="card card-nested clearfix">
+							<div class="content">
+								<p class="clear-margin relative">
+									<strong>{{ work.position }}</strong>,&nbsp;
+									<a href="{{ work.website }}"
+										 target="_blank">{{ work.company }}
+									</a>
+								</p>
+								<p class="text-muted">
+									<small>
+										<span class="space-right">
+											{% if work.endDate %}
+											  {% if work.startDate %}
+												  {{ work.startDate | date: "%B %Y" }} -
+											  {% endif %}
+												{{ work.endDate | date: "%B %Y" }}
+											{% elsif work.startDate %}
+											  {{locale.since}} {{ work.startDate | date: "%B %Y" }}
+											{% else %}
+											  {{locale.actually}}
+											{% endif %}
+										</span>
+										<span>
+											<i class="icon-clock mr-5">
+											</i>1 year
+										</span>
+									</small>
+								</p>
+								{% if work.summary %}
+								<div class="mop-wrapper space-bottom">
+									{{ work.summary  | markdownify}}
+								</div>
+								{% endif %}
+								{% if work.highlights != empty %}
+								<ul>
+									{% for highlight in work.highlights %}
+									<li class="mop-wrapper">
+										{{ highlight | markdownify }}
+									</li>
+									{% endfor %}
+								</ul>
+								{% endif %}
 							</div>
-							<div class="info">
-								<h4 class="title text-uppercase">About</h4>
-								<div class="card card-nested">
-									<div itemprop="description"
-											 class="content mop-wrapper">
-										<p>{{ resume.basics.summary }}</p>
+						</li>
+					</ul>
+					{% endfor %}
+				</div>
+			</div>
+			{% endif %}
+			{% if resume.skills != empty %}
+			<div id="skills"
+					 class="detail">
+				<div class="icon">
+					<i class="fs-lg
+										icon-tools">
+					</i>
+					<span class="mobile-title">Skills</span>
+				</div>
+				<div class="info">
+					<h4 class="title
+										 text-uppercase">Skills</h4>
+					<div class="content">
+						<ul class="list-unstyled clear-margin">
+							{% for skill in resume.skills %}
+							<li class="card card-nested card-skills">
+								<div data-toggle="tooltip" title="{{ skill.level }}"
+										 data-placement="left" class="skill-level">
+									<div class="skill-progress {{ skill.level | downcase }}"></div>
+								</div>
+								<div class="skill-info">
+									<strong>{{ skill.name }}</strong>
+									<div class="space-top labels">
+										{% for keyword in skill.keywords %}
+										<span class="label label-keyword">{{ keyword }}</span>
+										{% endfor %}
 									</div>
 								</div>
-							</div>
-						</div>
-						{% endif %}
-						{% if resume.work != empty %}
-						<div id="work-experience" class="detail">
-							<div class="icon">
-								<i class="fs-lg icon-office"></i>
-								<span class="mobile-title">Work Experience</span>
-							</div>
-							<div class="info">
-								<h4 class="title text-uppercase">Work Experience</h4>
-								{% for work in resume.work %}
-								<ul class="list-unstyled clear-margin">
-									<li class="card card-nested clearfix">
-										<div class="content">
-											<p class="clear-margin relative">
-												<strong>{{ work.position }}</strong>,&nbsp;
-												<a href="{{ work.website }}"
-													 target="_blank">{{ work.company | markdownify}}
-												</a>
-											</p>
-											<p class="text-muted">
-												<small>
-													<span class="space-right">
-														{% if work.endDate %}
-														  {% if work.startDate %}
-															  {{ work.startDate | date: "%B %Y" }} -
-														  {% endif %}
-															{{ work.endDate | date: "%B %Y" }}
-														{% elsif work.startDate %}
-														  {{locale.since}} {{ work.startDate | date: "%B %Y" }}
-														{% else %}
-														  {{locale.actually}}
-														{% endif %}
-													</span>
-													<span>
-														<i class="icon-clock mr-5">
-														</i>1 year
-													</span>
-												</small>
-											</p>
-											{% if work.summary %}
-											<div class="mop-wrapper space-bottom">
-												<p>{{ work.summary }}</p>
-											</div>
-											{% endif %}
-											{% if work.highlights != empty %}
-											<ul>
-												{% for highlight in work.highlights %}
-												<li class="mop-wrapper">
-													<p> highlight </p>
-												</li>
-												{% endfor %}
-											</ul>
-											{% endif %}
-										</div>
-									</li>
-								</ul>
-								{% endfor %}
-							</div>
-						</div>
-						{% endif %}
-						{% if resume.skills != empty %}
-						<div id="skills"
-								 class="detail">
-							<div class="icon">
-								<i class="fs-lg
-													icon-tools">
-								</i>
-								<span class="mobile-title">Skills</span>
-							</div>
-							<div class="info">
-								<h4 class="title
-													 text-uppercase">Skills</h4>
-								<div class="content">
-									<ul class="list-unstyled clear-margin">
-										{% for skill in resume.skills %}
-										<li class="card card-nested card-skills">
-											<div data-toggle="tooltip" title="{{ skill.level }}"
-													 data-placement="left" class="skill-level">
-												<div class="skill-progress {{ skill.level | downcase }}"></div>
-											</div>
-											<div class="skill-info">
-												<strong>{{ skill.name }}</strong>
-												<div class="space-top labels">
-													{% for keyword in skill.keywords %}
-													<span class="label label-keyword">{{ keyword }}</span>
-													{% endfor %}
-												</div>
-											</div>
-										</li>
-										{% endfor %}
-									</ul>
-								</div>
-							</div>
-						</div>
-						{% endif %}
-						{% if resume.education != empty %}
-						<div id="education" class="detail">
-							<div class="icon">
-								<i class="fs-lg icon-graduation-cap"></i>
-								<span class="mobile-title">Education</span>
-							</div>
-							<div class="info">
-								<h4 class="title text-uppercase">Education</h4>
-								<div class="content">
-									<ul class="list-unstyled clear-margin">
-										{% for study in resume.education %}
-										<li class="card card-nested">
-											<div class="content">
-												<p class="clear-margin relative">
-													<strong>{{ study.studyType}},&nbsp;</strong>
-													{{study.institution}}
-												</p>
-												<p class="text-muted">
-													<small>
-														{% if study.endDate %}
-														  {% if study.startDate %}
-															  {{ study.startDate | date: "%B %Y" }} -
-														  {% endif %}
-															{{ study.endDate | date: "%B %Y" }}
-														{% elsif study.startDate %}
-														  {{locale.since}} {{ study.startDate | date: "%B %Y" }}
-														{% else %}
-														  {{locale.actually}}
-														{% endif %}
-													</small>
-												</p>
-												{% if study.gpa %}
-												<i>{{ study.gpa }}</i>
-												{% endif %}
-												{% if study.area %}
-												<div class="space-top labels">
-													<span class="label label-keyword">
-														{{ study.area }}
-													</span>
-												</div>
-												{% endif %}
-											</div>
-										</li>
-										{% endfor %}
-									</ul>
-								</div>
-							</div>
-						</div>
-						{% endif %}
-						{% if resume.awards != empty %}
-						<div id="awards"
-								 class="detail">
-							<div class="icon"><i class="fs-lg icon-trophy">
-								</i>
-								<span class="mobile-title">Awards</span>
-							</div>
-							<div class="info">
-								<h4 class="title text-uppercase"> Awards</h4>
-								<div class="content">
-									<ul class="list-unstyled clear-margin">
-										{% for award in resume.awards %}
-										<li class="card card-nested">
-											<div class="content">
-												<p itemprop="award" class="clear-margin">
-													<strong>{{ award.name }}</strong> </p>
-												{% if award.data %}
-												<p class="text-muted">
-													<small>Awarded on: {{ award.date }}</small>
-												</p>
-												{% endif %}
-												{% if award.description %}
-												<div class="mop-wrapper">
-													<p>{{ award.description }}</p>
-												</div>
-												{% endif %}
-											</div>
-										</li>
-										{% endfor %}
-									</ul>
-								</div>
-							</div>
-						</div>
-						{% endif %}
-						{% if resume.volunteer != empty %}
-						<div id="volunteer-work" class="detail">
-							<div class="icon">
-								<i class="fs-lg icon-child"></i>
-								<span class="mobile-title">Volunteer Work</span>
-							</div>
-							<div class="info">
-								<h4 class="title text-uppercase">Volunteer Work</h4>
-								<div class="content">
-									<ul class="list-unstyled clear-margin">
-										{% for work in resume.volunteer %}
-										<li class="card card-nested">
-											<div class="content">
-												<p class="clear-margin relative">
-													<strong>{{ work.position}}, </strong>
-													{% if work.website %}
-													{% if work.organization %}
-													<a href="{{ work.website }}"
-														 target="_blank"> {{ work.organization }}
-													</a>
-													{% else %}
-													<a href="{{ work.website }}"
-														 target="_blank"> {{ work.website }}
-													</a>
-													{% endif %}
-													{% elsif work.organization %}
-													{{work.organization}}
-													{% endif %}
-												</p>
-												<p class="text-muted">
-													<small>
-														{% if work.endDate %}
-														  {% if work.startDate %}
-															  {{ work.startDate | date: "%B %Y" }} -
-														  {% endif %}
-															{{ work.endDate | date: "%B %Y" }}
-														{% elsif work.startDate %}
-														  {{locale.since}} {{ work.startDate | date: "%B %Y" }}
-														{% else %}
-														  {{locale.actually}}
-														{% endif %}
-													</small>
-												</p>
-												{% if work.highlights != empty %}
-												<ul>
-													{% for highlight in work.highlights %}
-													<li class="mop-wrapper"><p>{{ highlight }}</p>
-													</li>
-													{% endfor %}
-												</ul>
-												{% endif %}
-											</div>
-										</li>
-										{% endfor %}
-									</ul>
-								</div>
-							</div>
-						</div>
-						{% endif %}
-						{% if resume.publications != empty %}
-						<div id="publications" class="detail">
-							<div class="icon">
-								<i class="fs-lg icon-newspaper"></i>
-								<span class="mobile-title">Publications</span>
-							</div>
-							<div class="info">
-								<h4 class="title text-uppercase">Publications</h4>
-								<div class="content">
-									<ul class="list-unstyled clear-margin">
-										{% for publi in resume.publications %}
-										<li class="card card-nested">
-											<div class="content">
-												<p class="clear-margin">
-													<strong>
-														{% if publi.website %}
-															{% if publi.title %}
-																<a href="{{ publi.website }}"
-																	 target="_blank"> {{ publi.title }}
-																</a>
-															{% else %}
-																<a href="{{ publi.website }}"
-																	 target="_blank"> {{ publi.website }}
-																</a>
-															{% endif %}
-														{% elsif publi.title %}
-															{{publi.title}}
-														{% endif }%
-													</strong>
-													{% if publi.publisher %}
-													  <br>{{ publi.publisher }}
-													{% endif %}
-													</p>
-												{% if publi.releaseDate %}
-												<p class="text-muted">
-													<small>Published on: {{ publi.releaseDate }}</small>
-												</p>
-												{% endif %}
-												{% if publi.summary %}
-												<div class="mop-wrapper">
-													<p>{{ publi.summary}}</p>
-												</div>
-												{% endif %}
-											</div>
-										</li>
-										{% endfor %}
-									</ul>
-								</div>
-							</div>
-						</div>
-						{% endif %}
-						{% if resume.interests != empty %}
-						<div id="interests" class="detail">
-							1
-							<div class="icon">
-								<i class="fs-lg icon-heart"></i>
-								<span class="mobile-title">Interests</span>
-							</div>
-							<div class="info">
-								<h4 class="title text-uppercase">Interests</h4>
-								<div class="content">
-									<ul class="list-unstyled clear-margin">
-										{% for interest in resume.interests %}
-										<li class="card card-nested">
-											{% if interest.name %}
-											<p><strong>{{ interest.name }}</strong></p>
-											{% endif %}
-											{% if interest.keywords != empty %}
-											<div class="space-top labels">
-												{% for keyword in interest.keywords %}
-												<span class="label label-keyword">{{ keyword }}</span>
-												{% endfor %}
-											</div>
-											{% endif %}
-										</li>
-										{% endfor %}
-									</ul>
-								</div>
-							</div>
-						</div>
-						{% endif %}
-						{% if resume.references != empty %}
-						<div id="references" class="detail">
-							<div class="icon">
-								<i class="fs-lgicon-thumbs-up"></i>
-								<span class="mobile-title">References</span>
-							</div>
-							<div class="info">
-								<h4 class="title text-uppercase">References</h4>
-								<div class="content">
-									<ul class="list-unstyled clear-margin">
-										{% for ref in resume.references %}
-										<li class="card card-nested">
-											{% if ref.name %}
-											{{ ref.name }}
-											{% endif %}
-											{% if ref.text %}
-											<blockquote class="quote">
-												<div class="mop-wrapper">
-													<p>{{ ref.text }}</p>
-												</div>
-											</blockquote>
-											{% endif %}
-										</li>
-										{% endfor %}
-									</ul>
-								</div>
-							</div>
-						</div>
-						{% endif %}
+							</li>
+							{% endfor %}
+						</ul>
 					</div>
 				</div>
-			</section>
-
-
-<!-- <section id="basics"> -->
-<!--   <div id="contacts"> -->
-<!--     <h3 class="underlined">{{locale.summary}}</h3> -->
-<!--     <div class="row"> -->
-<!--       {% if resume.basics.website %} -->
-<!--         <div class="website col-sm-4"> -->
-<!--           <strong>{{locale.website}}</strong> -->
-<!--           <a href="{{resume.basics.website}}">{{resume.basics.website}}</a> -->
-<!--         </div> -->
-<!--       {% endif %} -->
-<!--       {% if resume.basics.email %} -->
-<!--         <div class="email col-sm-4"> -->
-<!--           <strong>{{locale.email}}</strong> -->
-<!--           <a href="mailto:{{resume.basics.email}}">{{resume.basics.email}}</a> -->
-<!--         </div> -->
-<!--       {% endif %} -->
-<!--       {% if resume.basics.phone %} -->
-<!--         <div class="phone col-sm-4"> -->
-<!--           <strong>{{locale.phone}}</strong> -->
-<!--           {{resume.basics.phone}} -->
-<!--         </div> -->
-<!--       {% endif %} -->
-<!--     </div> -->
-<!--   </div> -->
-<!--   {% if resume.basics.summary %} -->
-<!--     <div id="summary"> -->
-<!--       <p>{{resume.basics.summary}}</p> -->
-<!--     </div> -->
-<!--   {% endif %} -->
-<!--   {% if resume.basics.profiles != empty %} -->
-<!--     <section id="profiles"> -->
-<!--       <div class="row"> -->
-<!--         {% for profile in resume.basics.profiles %} -->
-<!--           <div class="col-sm-4"> -->
-<!--             {% if profile.network %} -->
-<!--               <strong class="network"> -->
-<!--                 {{profile.network}}: -->
-<!--               </strong> -->
-<!--             {% endif %} -->
-<!--             {% if profile.url %} -->
-<!--               <a href="{{profile.url}}"> -->
-<!--                 {% if profile.username %} -->
-<!--                   {{profile.username}} -->
-<!--                 {% else %} -->
-<!--                   {{profile.url}} -->
-<!--                 {% endif %} -->
-<!--               </a> -->
-<!--             {% endif %} -->
-<!--           </div> -->
-<!--         {% endfor %} -->
-<!--       </div> -->
-<!--     </section> -->
-<!--   {% endif %} -->
-<!-- </section> -->
-
-<!-- {% if resume.work != empty %} -->
-<!--   <section id="work"> -->
-<!--     <h3 class="underlined">{{locale.work}}</h3> -->
-<!--     {% for work in resume.work %} -->
-<!--     <div class="entry"> -->
-<!--       {% if work.company %} -->
-<!--       <\!--section id="{{work.company}}"-\-> -->
-<!--         <h4 class="title"> -->
-<!--           {{work.company | markdownify}} -->
-<!--           <span class="date"> -->
-<!--             {% if work.endDate %} -->
-<!--               {% if work.startDate %} -->
-<!--                 <span class="start-date"> -->
-<!--                   {{ work.startDate | date: "%B %Y" }} - -->
-<!--                 </span> -->
-<!--               {% endif %} -->
-<!-- 							<span class="end-date"> -->
-<!-- 								{{ work.endDate | date: "%B %Y" }} -->
-<!-- 							</span> -->
-<!-- 						{% else %} -->
-<!-- 							{% if work.startDate %} -->
-<!-- 							  <span class="start-date"> -->
-<!-- 									{{locale.since}} {{ work.startDate | date: "%B %Y" }} -->
-<!-- 								</span> -->
-<!-- 							{% else %} -->
-<!-- 								{{locale.actually}} -->
-<!-- 							{% endif %} -->
-<!--             {% endif %} -->
-<!--           </span> -->
-<!--         </h4> -->
-<!-- 				<\!--/section-\-> -->
-<!--       {% endif %} -->
-
-<!--       {% if work.website %} -->
-<!--       <div class="website"> -->
-<!--         <a href="{{work.website}}">{{work.website}}</a> -->
-<!--       </div> -->
-<!--       {% endif %} -->
-
-<!--       {% if work.position %} -->
-<!--       <div class="subtitle"> -->
-<!--         {{work.position}} -->
-<!--       </div> -->
-<!--       {% endif %} -->
-
-<!--       {% if work.summary %} -->
-<!--       <div class="summary"> -->
-<!--         <p>{{work.summary | markdownify}}</p> -->
-<!--       </div> -->
-<!--       {% endif %} -->
-
-<!--       {% if work.highlights != empty %} -->
-<!--       <ul class="highlights"> -->
-<!--         {% for highlight in work.highlights %} -->
-<!--         <li>{{highlight | markdownify}}</li> -->
-<!--         {% endfor %} -->
-<!--       </ul> -->
-<!--       {% endif %} -->
-<!--     </div> -->
-<!--     {% endfor %} -->
-<!--   </section> -->
-<!-- {% endif %} -->
-
-<!-- {% if resume.volunteer != empty %} -->
-<!--   <section id="volunteer"> -->
-<!--     <h3 class="underlined">{{locale.volunteer}}</h3> -->
-<!--     {% for volunteer in resume.volunteer %} -->
-<!--     <div class="entry"> -->
-<!--       {% if volunteer.organization %} -->
-<!--       <\!-- <section id="{{volunteer.organization}}"> -\-> -->
-<!--         <h4 class="title"> -->
-<!--           {{volunteer.organization | markdownify}} -->
-<!--           <span class="date"> -->
-<!--             {% if volunteer.startDate %} -->
-<!--             <span class="start-date"> -->
-<!--               {{ volunteer.startDate | date: "%B %Y" }} - -->
-<!--             </span> -->
-<!--             {% endif %} -->
-<!--             {% if volunteer.endDate %} -->
-<!--             <span class="end-date"> -->
-<!--               {{ volunteer.endDate | date: "%B %Y" }} -->
-<!--             </span> -->
-<!--             {% else %} -->
-<!--             <span class="end-date"> -->
-<!--               {{locale.present}} -->
-<!--             </span> -->
-<!--             {% endif %} -->
-<!--           </span> -->
-<!--         </h4> -->
-<!--       <\!-- </section> -\-> -->
-<!--       {% endif %} -->
-
-<!--       {% if volunteer.website %} -->
-<!--       <div class="website"> -->
-<!--         <a href="{{volunteer.website}}">{{volunteer.website}}</a> -->
-<!--       </div> -->
-<!--       {% endif %} -->
-
-<!--       {% if volunteer.position %} -->
-<!--       <div class="subtitle"> -->
-<!--         {{volunteer.position}} -->
-<!--       </div> -->
-<!--       {% endif %} -->
-
-<!--       {% if volunteer.summary %} -->
-<!--       <div class="summary"> -->
-<!--         <p>{{volunteer.summary}}</p> -->
-<!--       </div> -->
-<!--       {% endif %} -->
-
-<!--       {% if volunteer.highlights != empty %} -->
-<!--       <ul class="highlights"> -->
-<!--         {% for highlight in volunteer.highlights %} -->
-<!--         <li>{{highlight}}</li> -->
-<!--         {% endfor %} -->
-<!--       </ul> -->
-<!--       {% endif %} -->
-<!--     </div> -->
-<!--     {% endfor %} -->
-<!--   </section> -->
-<!-- {% endif %} -->
-
-<!-- {% if resume.education != empty %} -->
-<!--   <section id="education"> -->
-<!--     <h3 class="underlined">{{locale.education}}</h3> -->
-<!--     {% for education in resume.education %} -->
-<!--     <div class="entry"> -->
-<!--       {% if education.institution %} -->
-<!--       <section id="{{education.institution}}"> -->
-<!--         <div class="title"> -->
-<!--           <h4> {{education.institution}} -->
-<!--             <span class="date"> -->
-<!--               {% if education.startDate %} -->
-<!--               <span class="start-date"> -->
-<!--                 {{ education.startDate | date: "%B %Y" }} - -->
-<!--               </span> -->
-<!--               {% endif %} -->
-<!--               {% if education.endDate %} -->
-<!--               <span class="end-date"> -->
-<!--                 {{ education.endDate | date: "%B %Y" }} -->
-<!--               </span> -->
-<!--               {% else %} -->
-<!--               <span class="end-date"> -->
-<!--                 {{locale.present}} -->
-<!--               </span> -->
-<!--               {% endif %} -->
-<!--             </span> -->
-<!--           </h4> -->
-<!--         </div> -->
-<!--       </section> -->
-<!--       {% endif %} -->
-
-<!--       {% if education.area %} -->
-<!--       <div class="subtitle"> -->
-<!--         {% if education.studyType %} -->
-<!--         {{education.studyType}}, -->
-<!--         {% endif %} -->
-<!--         {{education.area}} -->
-<!--       </div> -->
-<!--       {% endif %} -->
-
-<!--       {% if education.courses != empty %} -->
-<!--       <p> -->
-<!--         {% if education.studyType %} -->
-<!--         <strong> {{education.studyType}}: </strong> -->
-<!--         {% else %} -->
-<!--         <strong> Courses: </strong> -->
-<!--         {% endif %} -->
-<!--         {{courses | join:', '}} -->
-<!--         </p> -->
-<!--       </ul> -->
-<!--       {% endif %} -->
-
-<!--       {% if education.dissertation %} -->
-<!--       <div class="dissertation"> -->
-<!--         <span>{{locale.dissertation}} </span>{{education.dissertation}} -->
-<!--       </div> -->
-<!--       {% endif %} -->
-<!--     </div> -->
-<!--     {% endfor %} -->
-<!--   </section> -->
-<!-- {% endif %} -->
-
-<!-- {% if resume.skills != empty %} -->
-<!--   <section id="skills"> -->
-<!--     <h3 class="underlined">{{locale.skills}}</h3> -->
-<!--     <div class="row"> -->
-<!--       {% for skill in resume.skills %} -->
-<!--       <div class="skill col-sm-4"> -->
-<!--         {% if skill.name %} -->
-<!--         <div class="name"> -->
-<!--           <strong> {{skill.name}} </strong> -->
-<!--         </div> -->
-<!--         {% endif %} -->
-<!--         {% if skill.level %} -->
-<!--         <div class="level"> -->
-<!--           <em>{{skill.level}}</em> -->
-<!--         </div> -->
-<!--         {% endif %} -->
-<!--         {% if skill.keywords %} -->
-<!--         <ul class="keywords"> -->
-<!--           {% for keyword in skill.keywords %} -->
-<!--           <li>{{keyword}}</li> -->
-<!--           {% endfor %} -->
-<!--         </ul> -->
-<!--         {% endif %} -->
-<!--       </div> -->
-<!--       {% endfor %} -->
-<!--     </div> -->
-<!--   </section> -->
-<!-- {% endif %} -->
-
-<!-- {% if resume.languages != empty %} -->
-<!-- <section id="languages"> -->
-<!--   <h3 class="underlined">{{locale.languages}}</h3> -->
-<!--   <div class="row"> -->
-<!--     {% for language in resume.languages %} -->
-<!--     <div class="col-sm-4"> -->
-<!--       {% if language.name %} -->
-<!--       <span class="language"> -->
-<!--         <strong>{{language.name}}:</strong> -->
-<!--       </span> -->
-<!--       {% endif %} -->
-<!--       {% if language.level %} -->
-<!--       <span class="level"> -->
-<!--         {{language.level}} -->
-<!--       </span> -->
-<!--       {% endif %} -->
-<!--     </div> -->
-<!--     {% endfor %} -->
-<!--   </div> -->
-<!-- </section> -->
-<!-- {% endif %} -->
-
-<!-- {% if resume.interests != empty %} -->
-<!-- <section id="interests"> -->
-<!--   <h3 class="underlined">{{locale.interests}}</h3> -->
-<!--   <div class="row"> -->
-<!--     {% for interest in resume.interests %} -->
-<!--     <div class="col-sm-4 entry"> -->
-<!--       {% if interest.name %} -->
-<!--       <div class="name"> -->
-<!--       <strong> {{interest.name}} </strong> -->
-<!--       </div> -->
-<!--       {% endif %} -->
-<!--       {% if interest.keywords %} -->
-<!--       <ul class="keywords"> -->
-<!--         {% for keyword in interest.keywords %} -->
-<!--         <li>{{keyword}}</li> -->
-<!--         {% endfor %} -->
-<!--       </ul> -->
-<!--       {% endif %} -->
-<!--     </div> -->
-<!--     {% endfor %} -->
-<!--   </div> -->
-<!-- </section> -->
-<!-- {% endif %} -->
-
-<!-- {% if resume.references != empty %} -->
-<!-- <section id="references"> -->
-<!--   <h3 class="underlined">{{locale.references}}</h3> -->
-<!--   {% for reference in resume.references %} -->
-<!--   <div class="item"> -->
-<!--     {% if reference.reference %} -->
-<!--     <blockquote class="reference"> -->
-<!--       {{reference.reference}} -->
-<!--     </blockquote> -->
-<!--     {% endif %} -->
-<!--     {% if reference.name %} -->
-<!--     <div class="name"> -->
-<!--       — {{reference.name}} -->
-<!--     </div> -->
-<!--     {% endif %} -->
-<!--   </div> -->
-<!--   {% endfor %} -->
-<!-- </section> -->
-<!-- {% endif %} -->
-
-<!-- {% if resume.publications != empty %} -->
-<!-- <section id="publications"> -->
-<!--   <h3 class="underlined">{{locale.publication}}</h3> -->
-<!--   {% for publi in resume.publications %} -->
-<!--   <div class="publi"> -->
-<!--     {% if publi.title %} -->
-<!--     <div class="title"> -->
-<!--       <strong> {{ publi.title }} </strong> -->
-<!--     </div> -->
-<!--     {% endif %} -->
-<!--     {% if publi.authors %} -->
-<!--     <div class="author"> -->
-<!--       {{ publi.authors }} -->
-<!--     </div> -->
-<!--     {% endif %} -->
-<!--     {% if publi.publisher %} -->
-<!--     <div class="publisher"> -->
-<!--       Published in {{publi.publisher}}  -->
-<!-- 			{% if publi.releaseDate %} -->
-<!-- 			({{ publi.releaseDate | date: "%Y" }}) -->
-<!-- 			{% endif %} -->
-<!--     </div> -->
-<!--     {% endif %} -->
-<!--   </div> -->
-<!--   {% endfor %} -->
-<!-- </section> -->
-<!-- {% endif %} -->
+			</div>
+			{% endif %}
+			{% if resume.education != empty %}
+			<div id="education" class="detail">
+				<div class="icon">
+					<i class="fs-lg icon-graduation-cap"></i>
+					<span class="mobile-title">Education</span>
+				</div>
+				<div class="info">
+					<h4 class="title text-uppercase">Education</h4>
+					<div class="content">
+						<ul class="list-unstyled clear-margin">
+							{% for study in resume.education %}
+							<li class="card card-nested">
+								<div class="content">
+									<p class="clear-margin relative">
+										<strong>{{ study.studyType}},&nbsp;</strong>
+										{{study.institution}}
+									</p>
+									<p class="text-muted">
+										<small>
+											{% if study.endDate %}
+											  {% if study.startDate %}
+												  {{ study.startDate | date: "%B %Y" }} -
+											  {% endif %}
+												{{ study.endDate | date: "%B %Y" }}
+											{% elsif study.startDate %}
+											  {{locale.since}} {{ study.startDate | date: "%B %Y" }}
+											{% else %}
+											  {{locale.actually}}
+											{% endif %}
+										</small>
+									</p>
+									{% if study.gpa %}
+									<i>{{ study.gpa }}</i>
+									{% endif %}
+									{% if study.area %}
+									<div class="space-top labels">
+										<span class="label label-keyword">
+											{{ study.area }}
+										</span>
+									</div>
+									{% endif %}
+								</div>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{% endif %}
+			{% if resume.awards != empty %}
+			<div id="awards"
+					 class="detail">
+				<div class="icon"><i class="fs-lg icon-trophy">
+					</i>
+					<span class="mobile-title">Awards</span>
+				</div>
+				<div class="info">
+					<h4 class="title text-uppercase"> Awards</h4>
+					<div class="content">
+						<ul class="list-unstyled clear-margin">
+							{% for award in resume.awards %}
+							<li class="card card-nested">
+								<div class="content">
+									<p itemprop="award" class="clear-margin">
+										<strong>{{ award.name }}</strong> </p>
+									{% if award.data %}
+									<p class="text-muted">
+										<small>Awarded on: {{ award.date }}</small>
+									</p>
+									{% endif %}
+									{% if award.description %}
+									<div class="mop-wrapper">
+										<p>{{ award.description }}</p>
+									</div>
+									{% endif %}
+								</div>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{% endif %}
+			{% if resume.volunteer != empty %}
+			<div id="volunteer-work" class="detail">
+				<div class="icon">
+					<i class="fs-lg icon-child"></i>
+					<span class="mobile-title">Volunteer Work</span>
+				</div>
+				<div class="info">
+					<h4 class="title text-uppercase">Volunteer Work</h4>
+					<div class="content">
+						<ul class="list-unstyled clear-margin">
+							{% for work in resume.volunteer %}
+							<li class="card card-nested">
+								<div class="content">
+									<p class="clear-margin relative">
+										<strong>{{ work.position}}, </strong>
+										{% if work.website %}
+										{% if work.organization %}
+										<a href="{{ work.website }}"
+											 target="_blank"> {{ work.organization }}
+										</a>
+										{% else %}
+										<a href="{{ work.website }}"
+											 target="_blank"> {{ work.website }}
+										</a>
+										{% endif %}
+										{% elsif work.organization %}
+										{{work.organization}}
+										{% endif %}
+									</p>
+									<p class="text-muted">
+										<small>
+											{% if work.endDate %}
+											  {% if work.startDate %}
+												  {{ work.startDate | date: "%B %Y" }} -
+											  {% endif %}
+												{{ work.endDate | date: "%B %Y" }}
+											{% elsif work.startDate %}
+											  {{locale.since}} {{ work.startDate | date: "%B %Y" }}
+											{% else %}
+											  {{locale.actually}}
+											{% endif %}
+										</small>
+									</p>
+									{% if work.highlights != empty %}
+									<ul>
+										{% for highlight in work.highlights %}
+										<li class="mop-wrapper"><p>{{ highlight }}</p>
+										</li>
+										{% endfor %}
+									</ul>
+									{% endif %}
+								</div>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{% endif %}
+			{% if resume.publications != empty %}
+			<div id="publications" class="detail">
+				<div class="icon">
+					<i class="fs-lg icon-newspaper"></i>
+					<span class="mobile-title">Publications</span>
+				</div>
+				<div class="info">
+					<h4 class="title text-uppercase">Publications</h4>
+					<div class="content">
+						<ul class="list-unstyled clear-margin">
+							{% for publi in resume.publications %}
+							<li class="card card-nested">
+								<div class="content">
+									<p class="clear-margin">
+										<strong>
+											{% if publi.website %}
+												{% if publi.title %}
+													<a href="{{ publi.website }}"
+														 target="_blank"> {{ publi.title }}
+													</a>
+												{% else %}
+													<a href="{{ publi.website }}"
+														 target="_blank"> {{ publi.website }}
+													</a>
+												{% endif %}
+											{% elsif publi.title %}
+												{{publi.title}}
+											{% endif %}
+										</strong><br>
+										{% if publi.publisher %}
+										  {{ publi.publisher }}
+										{% endif %}
+										</p>
+									{% if publi.releaseDate %}
+									<p class="text-muted">
+										<small>Published on: {{ publi.releaseDate }}</small>
+									</p>
+									{% endif %}
+									{% if publi.summary %}
+									<div class="mop-wrapper">
+										<p>{{ publi.summary}}</p>
+									</div>
+									{% endif %}
+								</div>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{% endif %}
+			{% if resume.interests != empty %}
+			<div id="interests" class="detail">
+				1
+				<div class="icon">
+					<i class="fs-lg icon-heart"></i>
+					<span class="mobile-title">Interests</span>
+				</div>
+				<div class="info">
+					<h4 class="title text-uppercase">Interests</h4>
+					<div class="content">
+						<ul class="list-unstyled clear-margin">
+							{% for interest in resume.interests %}
+							<li class="card card-nested">
+								{% if interest.name %}
+								<p><strong>{{ interest.name }}</strong></p>
+								{% endif %}
+								{% if interest.keywords != empty %}
+								<div class="space-top labels">
+									{% for keyword in interest.keywords %}
+									<span class="label label-keyword">{{ keyword }}</span>
+									{% endfor %}
+								</div>
+								{% endif %}
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{% endif %}
+			{% if resume.references != empty %}
+			<div id="references" class="detail">
+				<div class="icon">
+					<i class="fs-lgicon-thumbs-up"></i>
+					<span class="mobile-title">References</span>
+				</div>
+				<div class="info">
+					<h4 class="title text-uppercase">References</h4>
+					<div class="content">
+						<ul class="list-unstyled clear-margin">
+							{% for ref in resume.references %}
+							<li class="card card-nested">
+								{% if ref.name %}
+								{{ ref.name }}
+								{% endif %}
+								{% if ref.text %}
+								<blockquote class="quote">
+									<div class="mop-wrapper">
+										<p>{{ ref.text }}</p>
+									</div>
+								</blockquote>
+								{% endif %}
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{% endif %}
+		</div>
+	</div>
+</section>

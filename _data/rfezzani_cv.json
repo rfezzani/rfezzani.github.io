@@ -2,7 +2,7 @@
 		"basics": {
 				"name": "Riadh Fezzani",
 				"label": "Doctor in applied mathematics",
-				"picture": "",
+				"picture": null,
 				"email": "rfezzani@gmail.com",
 				"phone": "+33 6 75 86 21 97",
 				"website": "https://rfezzani.github.io",
@@ -95,9 +95,12 @@
 				},
 				{
 						"company": "<abbr title=\"Office Nationale d&#39;Étude et de Recherches
-                        Aérospatiales\">ONERA</abbr>", "position":
-						"Ph.D. thesis", "website": "http://www.onera.fr/",
-						"startDate": "2007-11-01", "endDate": "2011-01-31",
+Aérospatiales\">ONERA</abbr>",
+						"position":
+						"Ph.D. thesis",
+						"website": "http://www.onera.fr/",
+						"startDate": "2007-11-01",
+						"endDate": "2011-01-31",
 						"summary": "In the hight performance computing team (<abbr title=\"Département du
 						            Traitrement de l&#39;Information et
 						            Modélisation/ Calcul Haute
@@ -141,8 +144,8 @@
 						"position": "Rugby coach",
 						"website": "http://www.combagneux.fr/sections/rugby/rugby.html",
 						"startDate": "2010-09-01",
-						"endDate": "",
-						"summary": "",
+						"endDate": null,
+						"summary": null,
 						"highlights": []
 				}],
 		"education": [
@@ -152,7 +155,7 @@
 						"studyType": "Ph.D.",
 						"startDate": "2007-11-01",
 						"endDate": "2011-01-31",
-						"gpa": "",
+						"gpa": null,
 						"courses": []
 				},
 				{
@@ -161,7 +164,7 @@
 						"studyType": "M.D.",
 						"startDate": "2006-09-01",
 						"endDate": "2007-06-31",
-						"gpa": "",
+						"gpa": null,
 						"courses": []
 				}
 		],
@@ -172,87 +175,87 @@
                       acquired by an adaptive optics retinal camera",
 						"publisher": "OSA Imaging and Applied Optics Congress",
 						"releaseDate": "2016-05-01",
-						"website": "",
+						"website": null,
 						"authors": "C. Kulcsa, J. Benesty, G. Le Besnerais, R. Fezzani, M. Paques.",
-						"summary": ""
+						"summary": null
 				},
 				{
 						"title": "Unsupervised registration of Adaptive Optics retinal images in SLO
                       fundus images",
 						"publisher": "The association for research in vision and ophtalmology meeting",
 						"releaseDate": "2014-05-01",
-						"website": "",
+						"website": null,
 						"authors": "R. Fezzani, P. Cornic, E. Boyenga Ödlund, A. Plyer, G. Le Besnerais, C. Kulcsar.",
-						"summary": ""
+						"summary": null
 				},
 				{
 						"title": "Traitement rapide et robuste d&#39;images issues d&#39;une caméra
                       rétinienne",
 						"publisher": "Journées Recherche Industrie de l&#39;Optique Adaptative",
 						"releaseDate": "2013-02-01",
-						"website": "",
+						"website": null,
 						"authors": "R. Fezzani, C. Kulcsar, G. Le Besnerais, A. Plyer and E. Boyenga Ödlund.",
-						"summary": ""
+						"summary": null
 				},
 				{
 						"title": "Using Overlapping and Filtering Techniques for Highly Parallel
                       Preconditioners",
 						"publisher": "SIAM Conference on Parallel Processing for Scientific Computing",
 						"releaseDate": "2012-09-01",
-						"website": "",
+						"website": null,
 						"authors": "L. Grigori, F. Nataf, R. Fezzani.",
-						"summary": ""
+						"summary": null
 				},
 				{
 						"title": "Sparse/Low-rank Block Filtering Decomposition",
 						"publisher": "International Workshop on Parallel Matrix Algorithms and Applications",
 						"releaseDate": "2012-01-01",
-						"website": "",
+						"website": null,
 						"authors": "R. Fezzani, L. Grigori, F. Nataf.",
-						"summary": ""
+						"summary": null
 				},
 				{
 						"title": "Block Filtering Decomposition",
 						"publisher": "Numerical Linear Algebra with Applications",
 						"releaseDate": "2014-01-01",
-						"website": "",
+						"website": null,
 						"authors": "R. Fezzani, L. Grigori, F. Nataf, K. Wang.",
-						"summary": ""
+						"summary": null
 				},
 				{
 						"title": "Approche parallèle pour l&#39;estimation du flot optique par méthode
                       variationnelle",
 						"publisher": "Pierre and Marie Curie University",
 						"releaseDate": "2011-06-10",
-						"website": "",
+						"website": null,
 						"authors": "Ph.D thesis in applied mathematic",
-						"summary": ""
+						"summary": null
 				},
 				{
 						"title": "Combined local-global approach in PIV processing: a better trade-off
                       between noise and resolution",
 						"publisher": "9th International symposium on particle image velocimetry",
 						"releaseDate": "2011-09-01",
-						"website": "",
+						"website": null,
 						"authors": "R. Fezzani, F. Champagnat, G. Le Besnerais, B. Leclaire, S. Davoust, Y. Le Sant.",
-						"summary": ""
+						"summary": null
 				},
 				{
 						"title": "Clarifying the implementation of warping in the combined 
                       local global method for optic flow computation",
 						"publisher": "European Signal Processing Conference",
 						"releaseDate": "2010-09-01",
-						"website": "",
+						"website": null,
 						"authors": "R. Fezzani, F. Champagnat, G. Le Besnerais.",
-						"summary": ""
+						"summary": null
 				},
 				{
 						"title": "Advanced processing methods for image-based displacement measurement",
 						"publisher": "Aerospace Lab Journal, num. 1",
 						"releaseDate": "2009-01-01",
-						"website": "",
+						"website": null,
 						"authors": "G. Le Besnerais, F. Champagnat, A. plyer, R. Fezzani, B. Leclaire, Y. Le Sant.",
-						"summary": ""
+						"summary": null
 				}
 		],
 		"skills": [
