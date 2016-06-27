@@ -52,20 +52,7 @@
 					<i class="icon fs-lg icon-mail"></i>
 				</span>
 				<span class="info">
-					{{ resume.basics.email }}
-					<!-- <a href="/cdn-cgi/l/email-protection#52203b313a3320367c3a373c36203b3921123f333b3e7c313d3f" -->
-					<!-- 	 itemprop="email" class="link-disguise"> -->
-					<!-- 	<span class="__cf_email__" -->
-					<!-- 				data-cfemail="f3819a909b928197dd9b969d97819a9880b39e929a9fdd909c9e"> -->
-					<!-- 		[email&#160;protected] -->
-					<!-- 	</span> -->
-					<!-- 	<script data-cfhash='f9e31' -->
-					<!-- 					type="text/javascript"> /* <![CDATA[ -->
-					<!-- 		*/!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return -->
-					<!-- 		t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* -->
-					<!-- 		]]> */ -->
-					<!-- 	</script> -->
-					<!-- </a> -->
+					{{ resume.basics.email | markdownify | remove: '<p>' | remove: '</p>' }}
 				</span>
 			</div>
 			{% endif %}
@@ -412,7 +399,7 @@
 										</p>
 									{% if publi.releaseDate %}
 									<p class="text-muted">
-										<small>Published on: {{ publi.releaseDate }}</small>
+										<small>Published on: {{ publi.releaseDate | date: "%Y" }}}</small>
 									</p>
 									{% endif %}
 									{% if publi.summary %}
