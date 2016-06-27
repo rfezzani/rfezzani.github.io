@@ -258,7 +258,7 @@
 		"skills": [
 				{
 						"name": "Programming",
-    				"level": "Expert",
+    				"level": "Master",
 						"keywords": [
 								"C/C++",
 								"Python",
@@ -267,7 +267,7 @@
 				},
 				{
 						"name": "High performance computing",
-    				"level": "Expert",
+    				"level": "Master",
 						"keywords": [
 								"openMP",
 								"CUDA",
@@ -275,7 +275,7 @@
 				},
 				{
 						"name": "Image processing",
-    				"level": "Expert",
+    				"level": "Master",
 						"keywords": [
 								"Optical flow",
 								"Image registration",
@@ -286,7 +286,7 @@
 				},
 				{
 						"name": "Linear algebra",
-    				"level": "Expert",
+    				"level": "Master",
 						"keywords": [
 								"Dense and sparse systems",
 								"Direct and iterative solvers",
@@ -298,7 +298,7 @@
 				},
 				{
 						"name": "3D",
-						"level": "Expert",
+						"level": "Master",
 						"keywords": [
 								"Ray tracing",
 								"VTK",

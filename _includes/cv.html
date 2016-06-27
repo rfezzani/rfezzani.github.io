@@ -216,10 +216,9 @@
 									<ul class="list-unstyled clear-margin">
 										{% for skill in resume.skills %}
 										<li class="card card-nested card-skills">
-											<div data-toggle="tooltip" title="Master"
+											<div data-toggle="tooltip" title="{{ skill.level }}"
 													 data-placement="left" class="skill-level">
-												<div class="skill-progress
-																		master"></div>
+												<div class="skill-progress {{ skill.level | downcase }}"></div>
 											</div>
 											<div class="skill-info">
 												<strong>{{ skill.name }}</strong>
@@ -230,6 +229,7 @@
 												</div>
 											</div>
 										</li>
+										{% endfor %}
 									</ul>
 								</div>
 							</div>
@@ -253,28 +253,43 @@
 													{{study.institution}}
 												</p>
 												<p class="text-muted">
-													<small>Jun, 2011 - Jan, 2014</small>
+													<small>
+													{% if study.endDate %}
+													{% if study.startDate %}
+													{{ study.startDate | date: "%B %Y" }} -
+													{% endif %}
+													{{ study.endDate | date: "%B %Y" }}
+													{% else %}
+													{% if study.startDate %}
+													{{locale.since}} {{ study.startDate | date: "%B %Y" }}
+													{% else %}
+													{{locale.actually}}
+													{% endif %}
+													{% endif %}
+													</small>
 												</p>
-												<i>4.0</i>
+												{% if study.gpa %}
+												<i>{{ study.gpa }}</i>
+												{% endif %}
+												{% if study.area %}
 												<div class="space-top labels">
-													<span class="label label-keyword">DB1101 -
-														Basic SQL
-													</span>
-													<span class="label label-keyword">CS2011 -
-														Java Introduction
+													<span class="label label-keyword">
+														{{ study.area }}
 													</span>
 												</div>
+												{% endif %}
 											</div>
 										</li>
+										{% endfor %}
 									</ul>
 								</div>
 							</div>
 						</div>
 						{% endif %}
+						{% if resume.awards != empty %}
 						<div id="awards"
 								 class="detail">
-							<div class="icon"><i class="fs-lg
-																					icon-trophy">
+							<div class="icon"><i class="fs-lg icon-trophy">
 								</i>
 								<span class="mobile-title">Awards</span>
 							</div>
@@ -282,23 +297,30 @@
 								<h4 class="title text-uppercase"> Awards</h4>
 								<div class="content">
 									<ul class="list-unstyled clear-margin">
+										{% for award in resume.awards %}
 										<li class="card card-nested">
 											<div class="content">
 												<p itemprop="award" class="clear-margin">
-													<strong>Digital Compression Pioneer
-														Award </strong> Techcrunch</p>
+													<strong>{{ award.name }}</strong> </p>
+												{% if award.data %}
 												<p class="text-muted">
-													<small>Awarded on: Nov 01, 2014</small>
+													<small>Awarded on: {{ award.date }}</small>
 												</p>
+												{% endif %}
+												{% if award.description %}
 												<div class="mop-wrapper">
-													<p>There is no spoon.</p>
+													<p>{{ award.description }}</p>
 												</div>
+												{% endif %}
 											</div>
 										</li>
+										{% endfor %}
 									</ul>
 								</div>
 							</div>
 						</div>
+						{% endif %}
+						{% if resume.volunteer != empty %}
 						<div id="volunteer-work" class="detail">
 							<div class="icon">
 								<i class="fs-lg icon-child"></i>
@@ -308,65 +330,113 @@
 								<h4 class="title text-uppercase">Volunteer Work</h4>
 								<div class="content">
 									<ul class="list-unstyled clear-margin">
+										{% for work in resume.volunteer %}
 										<li class="card card-nested">
 											<div class="content">
 												<p class="clear-margin relative">
-													<strong>Teacher, </strong>
-													<a href="http://coderdojo.com/"
-														 target="_blank"> CoderDojo
+													<strong>{{ work.position}}, </strong>
+													{% if work.website %}
+													{% if work.organization %}
+													<a href="{{ work.website }}"
+														 target="_blank"> {{ work.organization }}
 													</a>
+													{% else %}
+													<a href="{{ work.website }}"
+														 target="_blank"> {{ work.website }}
+													</a>
+													{% endif %}
+													{% else %}
+													{% if work.organization %}
+													{{work.organization}}
+													{% endif %}
+													{% endif %}
 												</p>
 												<p class="text-muted">
-													<small>Jan, 2012 - Jan, 2013</small>
+													<small>
+													{% if work.endDate %}
+													{% if work.startDate %}
+													{{ work.startDate | date: "%B %Y" }} -
+													{% endif %}
+													{{ work.endDate | date: "%B %Y" }}
+													{% else %}
+													{% if work.startDate %}
+													{{locale.since}} {{ work.startDate | date: "%B %Y" }}
+													{% else %}
+													{{locale.actually}}
+													{% endif %}
+													{% endif %}
+													</small>
 												</p>
-												<div class="mop-wrapper">
-													<p>Global movement of free coding clubs for
-														young people.</p>
-												</div>
+												{% if work.highlights != empty %}
 												<ul>
-													<li class="mop-wrapper"><p>Awarded 'Teacher
-															of the Month'</p>
+													{% for highlight in work.highlights %}
+													<li class="mop-wrapper"><p>{{ highlight }}</p>
 													</li>
+													{% endfor %}
 												</ul>
+												{% endif %}
 											</div>
 										</li>
+										{% endfor %}
 									</ul>
 								</div>
 							</div>
 						</div>
-						<div id="publications"
-								 class="detail">
+						{% endif %}
+						{% if resume.publications != empty %}
+						<div id="publications" class="detail">
 							<div class="icon">
-								<i class="fs-lg
-													icon-newspaper"></i>
+								<i class="fs-lg icon-newspaper"></i>
 								<span class="mobile-title">Publications</span>
 							</div>
 							<div class="info">
 								<h4 class="title text-uppercase">Publications</h4>
 								<div class="content">
 									<ul class="list-unstyled clear-margin">
+										{% for publi in resume.publications %}
 										<li class="card card-nested">
 											<div class="content">
 												<p class="clear-margin">
-													<strong><a href="http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"
-																		 target="_blank"> Video
-																		 compression for 3d
-																		 media</a>&nbsp;,&nbsp;</strong>
-																		 Hooli</p>
+													<strong>
+														{% if publi.website %}
+														{% if publi.title %}
+														<a href="{{ publi.website }}"
+															 target="_blank"> {{ publi.title }}
+														</a>
+														{% else %}
+														<a href="{{ publi.website }}"
+															 target="_blank"> {{ publi.website }}
+														</a>
+														{% endif %}
+														{% else %}
+														{% if publi.title %}
+														{{publi.title}}
+														{% endif %}
+														{% endif }%
+													</strong>
+													{% if publi.publisher %}
+													<br>{{ publi.publisher }}
+													{% endif %}
+													</p>
+												{% if publi.releaseDate %}
 												<p class="text-muted">
-													<small>Published on: Oct 01, 2014</small>
+													<small>Published on: {{ publi.releaseDate }}</small>
 												</p>
+												{% endif %}
+												{% if publi.summary %}
 												<div class="mop-wrapper">
-													<p>Innovative middle-out compression
-														algorithm that changes the way we store
-														data.</p>
+													<p>{{ publi.summary}}</p>
 												</div>
+												{% endif %}
 											</div>
 										</li>
+										{% endfor %}
 									</ul>
 								</div>
 							</div>
 						</div>
+						{% endif %}
+						{% if resume.interests != empty %}
 						<div id="interests" class="detail">
 							1
 							<div class="icon">
@@ -377,17 +447,26 @@
 								<h4 class="title text-uppercase">Interests</h4>
 								<div class="content">
 									<ul class="list-unstyled clear-margin">
+										{% for interest in resume.interests %}
 										<li class="card card-nested">
-											<p><strong>Wildlife</strong></p>
+											{% if interest.name %}
+											<p><strong>{{ interest.name }}</strong></p>
+											{% endif %}
+											{% if interest.keywords != empty %}
 											<div class="space-top labels">
-												<span class="label label-keyword">Ferrets</span>
-												<span class="label label-keyword">Unicorns</span>
+												{% for keyword in interest.keywords %}
+												<span class="label label-keyword">{{ keyword }}</span>
+												{% endfor %}
 											</div>
+											{% endif %}
 										</li>
+										{% endfor %}
 									</ul>
 								</div>
 							</div>
 						</div>
+						{% endif %}
+						{% if resume.references != empty %}
 						<div id="references" class="detail">
 							<div class="icon">
 								<i class="fs-lgicon-thumbs-up"></i>
@@ -397,21 +476,25 @@
 								<h4 class="title text-uppercase">References</h4>
 								<div class="content">
 									<ul class="list-unstyled clear-margin">
+										{% for ref in resume.references %}
 										<li class="card card-nested">
-											Erlich Bachman
+											{% if ref.name %}
+											{{ ref.name }}
+											{% endif %}
+											{% if ref.text %}
 											<blockquote class="quote">
 												<div class="mop-wrapper">
-													<p>It is my pleasure to recommend Richard,
-														his performance working as a consultant
-														for Main St. Company proved that he will
-														be a valuable addition to any company.</p>
+													<p>{{ ref.text }}</p>
 												</div>
 											</blockquote>
+											{% endif %}
 										</li>
+										{% endfor %}
 									</ul>
 								</div>
 							</div>
 						</div>
+						{% endif %}
 					</div>
 				</div>
 			</section>
