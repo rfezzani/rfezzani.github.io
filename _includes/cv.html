@@ -168,14 +168,14 @@
 								</p>
 								{% if work.summary %}
 								<div class="mop-wrapper space-bottom">
-									{{ work.summary  | markdownify}}
+									{{ work.summary  | markdownify | remove: '<p>' | remove: '</p>' }}
 								</div>
 								{% endif %}
 								{% if work.highlights != empty %}
 								<ul>
 									{% for highlight in work.highlights %}
 									<li class="mop-wrapper">
-										{{ highlight | markdownify }}
+										{{ highlight | markdownify  | remove: '<p>' | remove: '</p>' }}
 									</li>
 									{% endfor %}
 								</ul>
@@ -399,7 +399,7 @@
 										</p>
 									{% if publi.releaseDate %}
 									<p class="text-muted">
-										<small>Published on: {{ publi.releaseDate | date: "%Y" }}}</small>
+										<small>Published on: {{ publi.releaseDate | date: "%Y" }}</small>
 									</p>
 									{% endif %}
 									{% if publi.summary %}
