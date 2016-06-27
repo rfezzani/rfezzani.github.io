@@ -4,52 +4,52 @@
 					<span class="profile-pic-container">
 						<div class="profile-pic">
 							<img data-src="holder.js/100x100"
-									 alt="Richard Hendriks"
+									 alt="{{ resume.basics.name }}"
 									 src="//www.gravatar.com/avatar/9acdb04e603c1cac2b893190f6dd5911?s=100&amp;r=pg&amp;d=mm"
 									 itemprop="image"
 									 class="media-object img-circle center-block"/>
 						</div>
 						<div class="name-and-profession text-center">
-							{% if resume.name %}
-							<h3 itemprop="name"><b>{{ resume.name }}</b> </h3>
+							{% if resume.basics.name %}
+							<h3 itemprop="name"><b>{{ resume.basics.name }}</b> </h3>
 							{% endif %}
-							{% if resume.label %}
-							<h5 itemprop="jobTitle" class="text-muted">{{ resume.label }}</h5>
+							{% if resume.basics.label %}
+							<h5 itemprop="jobTitle" class="text-muted">{{ resume.basics.label }}</h5>
 							{% endif %}
 						</div>
 					</span>
 					<hr/>
 					<div class="contact-details clearfix">
-						{% if resume.location %}
+						{% if resume.basics.location %}
 						<div class="detail">
 							<span class="icon">
 								<i class="icon fs-lg icon-location"></i>
 							</span>
 							<span class="info">
-								{{ resume.location.address }},
-								{{ resume.location.postalCode }},
-								{{ resume.location.city }}.
-								{{ resume.location.region }}
+								{{ resume.basics.location.address }},
+								{{ resume.basics.location.postalCode }},
+								{{ resume.basics.location.city }}.
+								{{ resume.basics.location.region }}
 							</span>
 						</div>
 						{% endif %}
-						{% if resume.phone %}
+						{% if resume.basics.phone %}
 						<div class="detail">
 							<span class="icon">
 								<i class="icon fs-lg icon-phone"></i>
 							</span>
 							<span itemprop="telephone" class="info">
-								(912) 555-4321
+								{{ resume.basics.phone }}
 							</span>
 						</div>
 						{% endif %}
-						{% if resume.email %}
+						{% if resume.basics.email %}
 						<div class="detail">
 							<span class="icon">
 								<i class="icon fs-lg icon-mail"></i>
 							</span>
 							<span class="info">
-								{{ resume.email }}
+								{{ resume.basics.email }}
 								<!-- <a href="/cdn-cgi/l/email-protection#52203b313a3320367c3a373c36203b3921123f333b3e7c313d3f" -->
 								<!-- 	 itemprop="email" class="link-disguise"> -->
 								<!-- 	<span class="__cf_email__" -->
@@ -66,14 +66,14 @@
 							</span>
 						</div>
 						{% endif %}
-						{% if resume.website %}
+						{% if resume.basics.website %}
 						<div class="detail">
 							<span class="icon">
 								<i class="icon fs-lg icon-link"></i>
 							</span>
 							<span class="info">
-								<a href="{{ resume.website}}"
-									 target="_blank">{{ resume.website }}</a>
+								<a href="{{ resume.basics.website}}"
+									 target="_blank">{{ resume.basics.website }}</a>
 							</span>
 						</div>
 						{% endif %}
@@ -160,18 +160,15 @@
 												<small>
 													<span class="space-right">
 														{% if work.endDate %}
-														{% if work.startDate %}
-															{{ work.startDate | date: "%B %Y" }} -
-														{% endif %}
+														  {% if work.startDate %}
+															  {{ work.startDate | date: "%B %Y" }} -
+														  {% endif %}
 															{{ work.endDate | date: "%B %Y" }}
+														{% elsif work.startDate %}
+														  {{locale.since}} {{ work.startDate | date: "%B %Y" }}
 														{% else %}
-														{% if work.startDate %}
-															{{locale.since}} {{ work.startDate | date: "%B %Y" }}
-														{% else %}
-														{{locale.actually}}
+														  {{locale.actually}}
 														{% endif %}
-														{% endif %}
-														<!-- {{ work.startDate | date: "%B %Y" }} - {{ work.endDate | date: "%B %Y" }} -->
 													</span>
 													<span>
 														<i class="icon-clock mr-5">
@@ -254,18 +251,16 @@
 												</p>
 												<p class="text-muted">
 													<small>
-													{% if study.endDate %}
-													{% if study.startDate %}
-													{{ study.startDate | date: "%B %Y" }} -
-													{% endif %}
-													{{ study.endDate | date: "%B %Y" }}
-													{% else %}
-													{% if study.startDate %}
-													{{locale.since}} {{ study.startDate | date: "%B %Y" }}
-													{% else %}
-													{{locale.actually}}
-													{% endif %}
-													{% endif %}
+														{% if study.endDate %}
+														  {% if study.startDate %}
+															  {{ study.startDate | date: "%B %Y" }} -
+														  {% endif %}
+															{{ study.endDate | date: "%B %Y" }}
+														{% elsif study.startDate %}
+														  {{locale.since}} {{ study.startDate | date: "%B %Y" }}
+														{% else %}
+														  {{locale.actually}}
+														{% endif %}
 													</small>
 												</p>
 												{% if study.gpa %}
@@ -345,26 +340,22 @@
 														 target="_blank"> {{ work.website }}
 													</a>
 													{% endif %}
-													{% else %}
-													{% if work.organization %}
+													{% elsif work.organization %}
 													{{work.organization}}
-													{% endif %}
 													{% endif %}
 												</p>
 												<p class="text-muted">
 													<small>
-													{% if work.endDate %}
-													{% if work.startDate %}
-													{{ work.startDate | date: "%B %Y" }} -
-													{% endif %}
-													{{ work.endDate | date: "%B %Y" }}
-													{% else %}
-													{% if work.startDate %}
-													{{locale.since}} {{ work.startDate | date: "%B %Y" }}
-													{% else %}
-													{{locale.actually}}
-													{% endif %}
-													{% endif %}
+														{% if work.endDate %}
+														  {% if work.startDate %}
+															  {{ work.startDate | date: "%B %Y" }} -
+														  {% endif %}
+															{{ work.endDate | date: "%B %Y" }}
+														{% elsif work.startDate %}
+														  {{locale.since}} {{ work.startDate | date: "%B %Y" }}
+														{% else %}
+														  {{locale.actually}}
+														{% endif %}
 													</small>
 												</p>
 												{% if work.highlights != empty %}
@@ -399,23 +390,21 @@
 												<p class="clear-margin">
 													<strong>
 														{% if publi.website %}
-														{% if publi.title %}
-														<a href="{{ publi.website }}"
-															 target="_blank"> {{ publi.title }}
-														</a>
-														{% else %}
-														<a href="{{ publi.website }}"
-															 target="_blank"> {{ publi.website }}
-														</a>
-														{% endif %}
-														{% else %}
-														{% if publi.title %}
-														{{publi.title}}
-														{% endif %}
+															{% if publi.title %}
+																<a href="{{ publi.website }}"
+																	 target="_blank"> {{ publi.title }}
+																</a>
+															{% else %}
+																<a href="{{ publi.website }}"
+																	 target="_blank"> {{ publi.website }}
+																</a>
+															{% endif %}
+														{% elsif publi.title %}
+															{{publi.title}}
 														{% endif }%
 													</strong>
 													{% if publi.publisher %}
-													<br>{{ publi.publisher }}
+													  <br>{{ publi.publisher }}
 													{% endif %}
 													</p>
 												{% if publi.releaseDate %}
