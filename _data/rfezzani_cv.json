@@ -31,10 +31,13 @@
 						"website": "http://www.ausy.fr/fr",
 						"startDate": "2014-11-13",
 						"endDate": null,
-						"summary": "I actually work in the R&D departement of **Océ - A Canon compagny**,
-                        within the **Eiger project** (large format **2.5D** and **3D**
-                        high resolution printing). My work consists
-                        in developping multiple tools for the
+						"summary": "I actually work in the R&D departement of [**Océ - A Canon
+                        compagny**](http://oce.com/), within the
+                        [**Eiger
+                        project**](http://www.projecteiger.com/)
+                        (large format **2.5D** and **3D** high
+                        resolution printing). My work consists in
+                        developping multiple tools for the
                         visualization and the manipulation of digital
                         3D objects. During this mission, I
                         participated to the filling of three patents.",
@@ -53,13 +56,19 @@
 						"website": "https://www.institutoptique.fr/",
 						"startDate": "2013-06-01",
 						"endDate": "2014-11-10",
-						"summary": "Within the <abbr title=\"Systèmes d&#39;Imagerie et Physique des
-                        Images\">SPIM</abbr> team in the _laboratoire
-                        Charles Fabry_, I worked in the context of the
-                        **Reveal** project in close collaboration with
-                        the **iMove** team at **ONERA**, the
-                        **Institut de la Vision** and **Imagine Eyes**
-                        on the design of efficient algorithms for the
+						"summary": "Within the [<abbr title=\"Systèmes d&#39;Imagerie et Physique des
+                        Images\">SPIM</abbr>](https://www.lcf.institutoptique.fr/Groupes-de-recherche/SPIM)
+                        team in the _laboratoire Charles Fabry_, I
+                        worked in the context of the
+                        [**Reveal**](http://www.agence-nationale-recherche.fr/?Project=ANR-12-TECS-0015)
+                        project in close collaboration with the
+                        **iMove** team at
+                        [**ONERA**](http://www.onera.fr/), the
+                        [**Institut de la
+                        Vision**](http://www.institut-vision.org/en/)
+                        and [**Imagine
+                        Eyes**](http://www.imagine-eyes.com/) on the
+                        design of efficient algorithms for the
                         processing of eye fundus images aquired with
                         an adaptive optics camera",
 						"highlights": [
@@ -76,9 +85,11 @@
 						"website": "http://www.inria.fr/",
 						"startDate": "2011-03-01",
 						"endDate": "2013-05-30",
-						"summary": "Within the **PARALL** team in the <abbr title=\"Laboratoire de
-                        recherche en informatique\">LRI</abbr>, I
-                        worked in the context of the **PetalH**
+						"summary": "Within the **PARALL** team in the [<abbr title=\"Laboratoire de
+                        recherche en
+                        informatique\">LRI</abbr>](https://www.lri.fr/),
+                        I worked in the context of the
+                        [**PetalH**](http://petal.saclay.inria.fr/)
                         project on the design of new parallel
                         preconditioners made for the acceleration of
                         the resolution of large ill-conditioned sparse
@@ -125,12 +136,13 @@ Aérospatiales\">ONERA</abbr>",
 						"website": "http://cerfacs.fr/en/",
 						"startDate": "2007-04-01",
 						"endDate": "2007-09-30",
-						"summary": "In the parallel algorithms team, in collaboration with <abbr
+						"summary": "In the parallel algorithms team, in collaboration with [<abbr
                         title=\"The Innovative Computing
-                        Laboratory\">ICL</abbr> from the university of
-                        Tennessee: \"Study of the parallelization of
-                        the \\\\(LDL^T\\\\) factorization in the symmetric
-                        indefinite case\" (Advisor: Marc _Baboulin_)",
+                        Laboratory\">ICL</abbr>](http://www.icl.utk.edu/)
+                        from the university of Tennessee: \"Study of
+                        the parallelization of the \\\\(LDL^T\\\\)
+                        factorization in the symmetric indefinite
+                        case\" (Advisor: Marc _Baboulin_)",
 						"highlights": [
 								"Dense Linear Algebra",
 								"Direct linear solver",
@@ -184,7 +196,7 @@ Aérospatiales\">ONERA</abbr>",
                       fundus images",
 						"publisher": "The association for research in vision and ophtalmology meeting",
 						"releaseDate": "2014-05-01",
-						"website": null,
+						"website": "http://iovs.arvojournals.org/article.aspx?articleid=2270365",
 						"authors": "R. Fezzani, P. Cornic, E. Boyenga Ödlund, A. Plyer, G. Le Besnerais, C. Kulcsar.",
 						"summary": null
 				},
@@ -203,13 +215,13 @@ Aérospatiales\">ONERA</abbr>",
 						"publisher": "SIAM Conference on Parallel Processing for Scientific Computing",
 						"releaseDate": "2012-09-01",
 						"website": null,
-						"authors": "L. Grigori, F. Nataf, R. Fezzani.",
+						"authors": "L. Qu, L. Grigori, F. Nataf, R. Fezzani.",
 						"summary": null
 				},
 				{
 						"title": "Sparse/Low-rank Block Filtering Decomposition",
 						"publisher": "International Workshop on Parallel Matrix Algorithms and Applications",
-						"releaseDate": "2012-01-01",
+						"releaseDate": "2012-06-29",
 						"website": null,
 						"authors": "R. Fezzani, L. Grigori, F. Nataf.",
 						"summary": null
@@ -218,7 +230,7 @@ Aérospatiales\">ONERA</abbr>",
 						"title": "Block Filtering Decomposition",
 						"publisher": "Numerical Linear Algebra with Applications",
 						"releaseDate": "2014-01-01",
-						"website": null,
+						"website": "http://onlinelibrary.wiley.com/doi/10.1002/nla.1921/abstract",
 						"authors": "R. Fezzani, L. Grigori, F. Nataf, K. Wang.",
 						"summary": null
 				},
@@ -227,7 +239,7 @@ Aérospatiales\">ONERA</abbr>",
                       variationnelle",
 						"publisher": "Pierre and Marie Curie University",
 						"releaseDate": "2011-06-10",
-						"website": null,
+						"website": "https://tel.archives-ouvertes.fr/tel-00713970/",
 						"authors": "Ph.D thesis in applied mathematic",
 						"summary": null
 				},
@@ -235,8 +247,8 @@ Aérospatiales\">ONERA</abbr>",
 						"title": "Combined local-global approach in PIV processing: a better trade-off
                       between noise and resolution",
 						"publisher": "9th International symposium on particle image velocimetry",
-						"releaseDate": "2011-09-01",
-						"website": null,
+						"releaseDate": "2011-07-21",
+						"website": "http://publications.onera.fr/exl-php/docs/ILS_DOC/263286/DOC396262_s1.pdf",
 						"authors": "R. Fezzani, F. Champagnat, G. Le Besnerais, B. Leclaire, S. Davoust, Y. Le Sant.",
 						"summary": null
 				},
@@ -244,16 +256,16 @@ Aérospatiales\">ONERA</abbr>",
 						"title": "Clarifying the implementation of warping in the combined 
                       local global method for optic flow computation",
 						"publisher": "European Signal Processing Conference",
-						"releaseDate": "2010-09-01",
-						"website": null,
+						"releaseDate": "2010-08-25",
+						"website": "http://www.eurasip.org/Proceedings/Eusipco/Eusipco2010/Contents/papers/1569292603.pdf",
 						"authors": "R. Fezzani, F. Champagnat, G. Le Besnerais.",
 						"summary": null
 				},
 				{
 						"title": "Advanced processing methods for image-based displacement measurement",
 						"publisher": "Aerospace Lab Journal, num. 1",
-						"releaseDate": "2009-01-01",
-						"website": null,
+						"releaseDate": "2009-12-01",
+						"website": "http://www.aerospacelab-journal.org/sites/www.aerospacelab-journal.org/files/Al1-04.pdf",
 						"authors": "G. Le Besnerais, F. Champagnat, A. plyer, R. Fezzani, B. Leclaire, Y. Le Sant.",
 						"summary": null
 				}
