@@ -88,18 +88,26 @@
 		<div class="social-links text-center">
 			<div>
 				{% for profile in resume.basics.profiles %}
-				{% if profile.network == "Twitter" %}
+				{% if profile.network %}
+				{% if profile.url %}
 				<a href="{{ profile.url }}"
-					 target="_blank" data-toggle="tooltip" title="Twitter" class="fs-2x social-link
-					 link-twitter icon-twitter">
+					 target="_blank" data-toggle="tooltip" title="{{ profile.network }}"
+					 class="fs-2x social-link link-{{ profile.network | downcase}} icon-{{ profile.network | downcase}}">
 				</a>
 				{% endif %}
-				{% if profile.network == "Github" %}
-				<a href="{{ profile.url }}"
-					 target="_blank" data-toggle="tooltip" title="Github" class="fs-2x social-link
-					 link-github icon-github">
 				{% endif %}
-				</a>
+				<!-- {% if profile.network == "Twitter" %} -->
+				<!-- <a href="{{ profile.url }}" -->
+				<!-- 	 target="_blank" data-toggle="tooltip" title="Twitter" -->
+				<!-- 	 class="fs-2x social-link link-twitter icon-twitter"> -->
+				<!-- </a> -->
+				<!-- {% endif %} -->
+				<!-- {% if profile.network == "Github" %} -->
+				<!-- <a href="{{ profile.url }}" -->
+				<!-- 	 target="_blank" data-toggle="tooltip" title="Github" -->
+				<!-- 	 class="fs-2x social-link link-github icon-github"> -->
+				<!-- {% endif %} -->
+				<!-- </a> -->
 				{% endfor %}
 			</div>
 		</div>
