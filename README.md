@@ -1,4 +1,4 @@
-# rfezzani.github.io
+### rfezzani.github.io
 
 I started writing my resume as an exercice to become more familiar
 with [Jekyll](https://jekyllrb.com/).
