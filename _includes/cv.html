@@ -121,7 +121,7 @@
 					<div class="card card-nested">
 						<div itemprop="description"
 								 class="content mop-wrapper">
-							<p>{{ resume.basics.summary }}</p>
+							<p>{{ resume.basics.summary | markdownify }}</p>
 						</div>
 					</div>
 				</div>
@@ -159,10 +159,12 @@
 											  {{locale.actually}}
 											{% endif %}
 										</span>
+										{% if work.duration %}
 										<span>
 											<i class="icon-clock mr-5">
-											</i>1 year
+											</i>{{ work.duration }}
 										</span>
+										{% endif %}
 									</small>
 								</p>
 								{% if work.summary %}
@@ -398,7 +400,7 @@
 										</p>
 									{% if publi.releaseDate %}
 									<p class="text-muted">
-										<small>Published on: {{ publi.releaseDate | date: "%Y" }}</small>
+										<small>Published on: {{ publi.releaseDate | date: "%B %Y" }}</small>
 									</p>
 									{% endif %}
 									{% if publi.summary %}

@@ -8,7 +8,10 @@
 				"website": "https://rfezzani.github.io",
 				"summary": "Autonomous and curious, 8 years of experience including a Ph.D., I
                     appreciate multidisciplinary environments and the
-                    implementation of efficient algorithms.",
+                    implementation of efficient algorithms.<br>
+
+                    I like open source projects and the [KISS
+                    principle](https://en.wikipedia.org/wiki/KISS_principle)",
 				"location": {
 						"address": "154 avenue Marx Dormoy",
 						"postalCode": "92120",
@@ -31,6 +34,7 @@
 						"website": "http://www.ausy.fr/fr",
 						"startDate": "2014-11-13",
 						"endDate": null,
+						"duration": null,
 						"summary": "I actually work in the R&D departement of [**Océ - A Canon
                         compagny**](http://oce.com/), within the
                         [**Eiger
@@ -56,6 +60,7 @@
 						"website": "https://www.institutoptique.fr/",
 						"startDate": "2013-06-01",
 						"endDate": "2014-11-10",
+						"duration": "18 monthes",
 						"summary": "Within the [<abbr title=\"Systèmes d&#39;Imagerie et Physique des
                         Images\">SPIM</abbr>](https://www.lcf.institutoptique.fr/Groupes-de-recherche/SPIM)
                         team in the _laboratoire Charles Fabry_, I
@@ -85,6 +90,7 @@
 						"website": "http://www.inria.fr/",
 						"startDate": "2011-03-01",
 						"endDate": "2013-05-30",
+						"duration": "2 years",
 						"summary": "Within the **PARALL** team in the [<abbr title=\"Laboratoire de
                         recherche en
                         informatique\">LRI</abbr>](https://www.lri.fr/),
@@ -112,6 +118,7 @@ Aérospatiales\">ONERA</abbr>",
 						"website": "http://www.onera.fr/",
 						"startDate": "2007-11-01",
 						"endDate": "2011-01-31",
+						"duration": "3 years",
 						"summary": "In the hight performance computing team (<abbr title=\"Département du
 						            Traitrement de l&#39;Information et
 						            Modélisation/ Calcul Haute
@@ -136,6 +143,7 @@ Aérospatiales\">ONERA</abbr>",
 						"website": "http://cerfacs.fr/en/",
 						"startDate": "2007-04-01",
 						"endDate": "2007-09-30",
+						"duration": "6 monthes",
 						"summary": "In the parallel algorithms team, in collaboration with [<abbr
                         title=\"The Innovative Computing
                         Laboratory\">ICL</abbr>](http://www.icl.utk.edu/)
@@ -286,7 +294,8 @@ Aérospatiales\">ONERA</abbr>",
 						"keywords": [
 								"openMP",
 								"CUDA",
-								"Metis"]
+								"openCL",
+								"Metis/Scotch"]
 				},
 				{
 						"name": "Image processing",
