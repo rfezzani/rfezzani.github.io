@@ -46,7 +46,7 @@
                         participated to the filling of three patents.",
 						"highlights": [
 								"Mesh voxelization",
-								"Mesh slicing",
+								"Volume slicing",
 								"Realtime visualization",
 								"Photorealism",
 								"Height map and texture generation",
