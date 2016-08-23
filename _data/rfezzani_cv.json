@@ -9,9 +9,8 @@
 				"summary": "Autonomous and curious, 8 years of experience including a Ph.D., I
                     appreciate multidisciplinary environments and the
                     implementation of efficient algorithms.<br>
-
                     I like open source projects and the [KISS
-                    principle](https://en.wikipedia.org/wiki/KISS_principle)",
+                    principle](https://en.wikipedia.org/wiki/KISS_principle).",
 				"location": {
 						"address": "154 avenue Marx Dormoy",
 						"postalCode": "92120",
@@ -46,11 +45,11 @@
                         3D objects. During this mission, I
                         participated to the filling of three patents.",
 						"highlights": [
-								"Height map and texture generation",
-								"Mesh slicing",
 								"Mesh voxelization",
+								"Mesh slicing",
 								"Realtime visualization",
 								"Photorealism",
+								"Height map and texture generation",
 								"Cutpath generation"
 						]
 				},
@@ -75,11 +74,10 @@
                         Eyes**](http://www.imagine-eyes.com/) on the
                         design of efficient algorithms for the
                         processing of eye fundus images aquired with
-                        an adaptive optics camera",
+                        an adaptive optics camera.",
 						"highlights": [
-								"Fast image registration under",
-								"Acquisition area detection",
-								"mutual information maximization",
+								"Fast image registration",
+								"Acquisition area detection (mutual information maximization)",
 								"Blood vessel activity detection"
 						]
 				},
@@ -99,14 +97,14 @@
                         project on the design of new parallel
                         preconditioners made for the acceleration of
                         the resolution of large ill-conditioned sparse
-                        linear systems",
+                        linear systems.",
 						"highlights": [
 								"Sparse linear algebra",
-								"Reordering",
-								"Preconditionning",
-								"Domain decomposition",
 								"Iterative linear solver",
-								"approximate block LDU factorization with filtering constraints",
+								"Preconditionning",
+								"Sparse matrices reordering",
+								"Domain decomposition",
+								"Approximate block LDU factorization with filtering constraints",
 								"Low-rank approximation"
 						]
 				},
@@ -128,12 +126,12 @@ Aérospatiales\">ONERA</abbr>",
 						            _Champagnat_ and François-Xavier _Roux_).",
 						"highlights": [
 								"Combined local gloal approach",
-								"Total variation",
+								"Total variation regularization",
 								"Picard/SOR solver",
 								"Color labeling",
 								"Variable splitting",
-								"High performance computing",
-								"**PIV**"
+								"High performance computing (multithreading, GPGPU)",
+								"Particle image velocimetry"
 						]
 				},
 				{
@@ -150,7 +148,7 @@ Aérospatiales\">ONERA</abbr>",
                         from the university of Tennessee: \"Study of
                         the parallelization of the \\\\(LDL^T\\\\)
                         factorization in the symmetric indefinite
-                        case\" (Advisor: Marc _Baboulin_)",
+                        case\" (Advisor: Marc _Baboulin_).",
 						"highlights": [
 								"Dense Linear Algebra",
 								"Direct linear solver",
