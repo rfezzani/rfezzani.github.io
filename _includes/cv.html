@@ -127,6 +127,41 @@
 				</div>
 			</div>
 			{% endif %}
+			{% if resume.skills != empty %}
+			<div id="skills"
+					 class="detail">
+				<div class="icon">
+					<i class="fs-lg
+										icon-tools">
+					</i>
+					<span class="mobile-title">Skills</span>
+				</div>
+				<div class="info">
+					<h4 class="title
+										 text-uppercase">Skills</h4>
+					<div class="content">
+						<ul class="list-unstyled clear-margin">
+							{% for skill in resume.skills %}
+							<li class="card card-nested card-skills">
+								<div data-toggle="tooltip" title="{{ skill.level }}"
+										 data-placement="left" class="skill-level">
+									<div class="skill-progress {{ skill.level | downcase }}"></div>
+								</div>
+								<div class="skill-info">
+									<strong>{{ skill.name }}</strong>
+									<div class="space-top labels">
+										{% for keyword in skill.keywords %}
+										<span class="label label-keyword">{{ keyword }}</span>
+										{% endfor %}
+									</div>
+								</div>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+			{% endif %}
 			{% if resume.work != empty %}
 			<div id="work-experience" class="detail">
 				<div class="icon">
@@ -185,41 +220,6 @@
 						</li>
 					</ul>
 					{% endfor %}
-				</div>
-			</div>
-			{% endif %}
-			{% if resume.skills != empty %}
-			<div id="skills"
-					 class="detail">
-				<div class="icon">
-					<i class="fs-lg
-										icon-tools">
-					</i>
-					<span class="mobile-title">Skills</span>
-				</div>
-				<div class="info">
-					<h4 class="title
-										 text-uppercase">Skills</h4>
-					<div class="content">
-						<ul class="list-unstyled clear-margin">
-							{% for skill in resume.skills %}
-							<li class="card card-nested card-skills">
-								<div data-toggle="tooltip" title="{{ skill.level }}"
-										 data-placement="left" class="skill-level">
-									<div class="skill-progress {{ skill.level | downcase }}"></div>
-								</div>
-								<div class="skill-info">
-									<strong>{{ skill.name }}</strong>
-									<div class="space-top labels">
-										{% for keyword in skill.keywords %}
-										<span class="label label-keyword">{{ keyword }}</span>
-										{% endfor %}
-									</div>
-								</div>
-							</li>
-							{% endfor %}
-						</ul>
-					</div>
 				</div>
 			</div>
 			{% endif %}

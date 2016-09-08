@@ -9,7 +9,7 @@
 				"summary": "Autonomous and curious, 8 years of experience including a Ph.D., I
                     appreciate multidisciplinary environments and the
                     implementation of efficient algorithms.<br>
-                    I like open source projects and the [KISS
+                    I support open source projects and promote the [KISS
                     principle](https://en.wikipedia.org/wiki/KISS_principle).",
 				"location": {
 						"address": "154 avenue Marx Dormoy",
@@ -46,11 +46,13 @@
                         participated to the filling of three patents.",
 						"highlights": [
 								"Mesh voxelization",
+								"<abbr title=\"Sparse Voxel Octree\">SVO</abbr> data structure",
 								"Volume slicing",
 								"Realtime visualization",
 								"Photorealism",
 								"Height map and texture generation",
-								"Cutpath generation"
+								"Cutpath generation",
+								"Blender plugin"
 						]
 				},
 				{
@@ -76,9 +78,12 @@
                         processing of eye fundus images aquired with
                         an adaptive optics camera.",
 						"highlights": [
+								"Code acceleration and optimization",
 								"Fast image registration",
+								"Image enhancement",
 								"Acquisition area detection (mutual information maximization)",
-								"Blood vessel activity detection"
+								"Blood vessel activity detection",
+								"UI for data base manipulation"
 						]
 				},
 				{
@@ -102,7 +107,7 @@
 								"Sparse linear algebra",
 								"Iterative linear solver",
 								"Preconditionning",
-								"Sparse matrices reordering",
+								"Sparse matrix graph reordering",
 								"Domain decomposition",
 								"Approximate block LDU factorization with filtering constraints",
 								"Low-rank approximation"
@@ -205,7 +210,7 @@ Aérospatiales\">ONERA</abbr>",
                       acquired by an adaptive optics retinal camera",
 						"publisher": "OSA Imaging and Applied Optics Congress",
 						"releaseDate": "2016-05-01",
-						"website": null,
+						"website": "https://www.osapublishing.org/abstract.cfm?uri=AOMS-2016-AOM3C.3",
 						"authors": "C. Kulcsár, J. Benesty, G. Le Besnerais, R. Fezzani, M. Paques.",
 						"summary": null
 				},
@@ -214,8 +219,8 @@ Aérospatiales\">ONERA</abbr>",
                       image enhancement and activity detection in retinal imaging",
 						"publisher": "IEEE International Workshop Computational Intelligence for Multimedia
                           Understanding (IWCIM 2014)",
-						"releaseDate": "2016-11-01",
-						"website": null,
+						"releaseDate": "2014-11-01",
+						"website": "http://ieeexplore.ieee.org/document/7008811/",
 						"authors": "C. Kulcsár, R. Fezzani, G. Le Besnerais, A. Plyer, X. Levecq.",
 						"summary": null
 				},
@@ -306,12 +311,16 @@ Aérospatiales\">ONERA</abbr>",
 								"C/C++",
 								"Python",
 								"Matlab",
-								"HTML/javascript"]
+								"HTML5/javascript",
+								"Qt",
+								"Git"]
 				},
 				{
 						"name": "High performance computing",
     				"level": "Master",
 						"keywords": [
+								"Multithreading",
+								"GPGPU",
 								"openMP",
 								"CUDA",
 								"openCL",
@@ -322,8 +331,10 @@ Aérospatiales\">ONERA</abbr>",
     				"level": "Master",
 						"keywords": [
 								"Optical flow",
-								"Image registration",
+								"Registration",
 								"Template matching",
+								"Segmentation",
+								"Active contours"
 								"openCV",
 								"Matplotlib",
 								"scikit-image"]
@@ -336,18 +347,18 @@ Aérospatiales\">ONERA</abbr>",
 								"Direct and iterative solvers",
 								"Preconditionning",
 								"Low-rank approximation",
-								"BLAS",
-								"LAPACK",
-								"Scipy"]
+								"BLAS/LAPACK",
+								"Numpy/Scipy"]
 				},
 				{
 						"name": "3D",
 						"level": "Master",
 						"keywords": [
 								"Ray tracing",
-								"VTK",
+								"Shading",
 								"openGL/GLSL",
-								"Blender"]
+								"Blender",
+								"VTK"]
 				}
 		],
 		"languages": [
