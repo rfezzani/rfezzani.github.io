@@ -158,6 +158,18 @@ Aérospatiales\">ONERA</abbr>",
 		],
 		"volunteer": [
 				{
+						"organization": "<abbr title=\"Optical Society of America\">OSA</abbr>, <abbr
+														 title=\"International Parallel & Distributed Processing
+														 Symposium\">IPDPS</abbr>, <abbr title=\"Parallel Computing
+                             Journal\">PARCO</abbr>",
+						"position": "Journal and conference reviewer",
+						"website": null,
+						"startDate": null,
+						"endDate": null,
+						"summary": null,
+						"highlights": []
+				},
+				{
 						"organization": "<abbr title=\"Club Olympique Multisports de Bagneux\">COMB Rugby</abbr>",
 						"position": "Rugby coach",
 						"website": "http://www.combagneux.fr/sections/rugby/rugby.html",
@@ -194,7 +206,17 @@ Aérospatiales\">ONERA</abbr>",
 						"publisher": "OSA Imaging and Applied Optics Congress",
 						"releaseDate": "2016-05-01",
 						"website": null,
-						"authors": "C. Kulcsa, J. Benesty, G. Le Besnerais, R. Fezzani, M. Paques.",
+						"authors": "C. Kulcsár, J. Benesty, G. Le Besnerais, R. Fezzani, M. Paques.",
+						"summary": null
+				},
+				{
+						"title": "Fast and robust image registration with local motion estimation for
+                      image enhancement and activity detection in retinal imaging",
+						"publisher": "IEEE International Workshop Computational Intelligence for Multimedia
+                          Understanding (IWCIM 2014)",
+						"releaseDate": "2016-11-01",
+						"website": null,
+						"authors": "C. Kulcsár, R. Fezzani, G. Le Besnerais, A. Plyer, X. Levecq.",
 						"summary": null
 				},
 				{
@@ -203,7 +225,7 @@ Aérospatiales\">ONERA</abbr>",
 						"publisher": "The association for research in vision and ophtalmology meeting",
 						"releaseDate": "2014-05-01",
 						"website": "http://iovs.arvojournals.org/article.aspx?articleid=2270365",
-						"authors": "R. Fezzani, P. Cornic, E. Boyenga Ödlund, A. Plyer, G. Le Besnerais, C. Kulcsar.",
+						"authors": "R. Fezzani, P. Cornic, E. Boyenga Ödlund, A. Plyer, G. Le Besnerais, C. Kulcsár.",
 						"summary": null
 				},
 				{
@@ -212,7 +234,7 @@ Aérospatiales\">ONERA</abbr>",
 						"publisher": "Journées Recherche Industrie de l&#39;Optique Adaptative",
 						"releaseDate": "2013-02-01",
 						"website": null,
-						"authors": "R. Fezzani, C. Kulcsar, G. Le Besnerais, A. Plyer and E. Boyenga Ödlund.",
+						"authors": "R. Fezzani, C. Kulcsár, G. Le Besnerais, A. Plyer and E. Boyenga Ödlund.",
 						"summary": null
 				},
 				{
