@@ -26,11 +26,11 @@
     {
       "company": "VitaDX",
       "position": "R&D engineer",
-      "website": "http://www.ausy.fr/fr",
+      "website": "https://vitadx.com/",
       "startDate": "2017-10-01",
       "endDate": null,
       "duration": "9 years",
-      "summary": "I actually work in the R&D team of [**VitaDX**](https://vitadx.com/) in the context of the [**Visiocyt**](https://patient.visiocyt.com/) medical software.I am involved in the design and the development of the bladder diagnosis pipeline, based on the analysis of large whole slide images of urine cytology. I co-directed a Ph. D. student and advised multiple trainee. I also participated in the filling of three patent filings",
+      "summary": "I actually work in the R&D in the context of the [**Visiocyt**](https://patient.visiocyt.com/) medical software.I am involved in the design and the development of the bladder diagnosis pipeline, based on the analysis of large whole slide images of urine cytology. I co-supervised a Ph. D. student and advised several interns. I also participated in the filing of three patents",
       "highlights": [
         "Multi-layer <abbr title=\"Whole Slide Images\">WSI</abbr> classification",
         "Cell type classification",
@@ -41,7 +41,7 @@
     {
       "company": "Ausy",
       "position": "Engineer",
-      "website": "http://www.ausy.fr/fr",
+      "website": null,
       "startDate": "2014-11-13",
       "endDate": "2017-09-30",
       "duration": "3 years",
@@ -111,13 +111,14 @@
   "volunteer": [
     {
       "organization": "Scikit Image, pyimof, scipy, keras, conda",
-      "position": "Open source software contribution",
+      "position": "Open source software contributions",
       "website": "https://github.com/rfezzani",
       "startDate": null,
       "endDate": null,
       "summary": null,
       "highlights": [
-        "Scikit-Image core team member from 2019 to 2022"
+        "[**Scikit-Image**](https://scikit-image.org/) core team member from 2019 to 2022",
+        "Main developer of the [**pyimof**](https://pyimof.readthedocs.io/en/latest/) python package"
       ]
     },
     {
@@ -259,7 +260,7 @@
         "Stitching",
         "Template matching",
         "Segmentation",
-        "classification"
+        "Classification"
       ]
     },
     {
@@ -267,8 +268,8 @@
       "level": "Master",
       "keywords": [
         "Python",
-        "Matlab",
         "C/C++",
+        "Matlab",
         "Git"
       ]
     },
@@ -278,7 +279,7 @@
       "keywords": [
         "<abbr title=\"Multiple Instance Learning\">MIL</abbr>",
         "Anomaly detection",
-        "Imbalanced dataset"
+        "Domain generalization"
       ]
     },
     {
