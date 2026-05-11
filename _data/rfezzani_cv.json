@@ -1,381 +1,319 @@
 {
-		"basics": {
-				"name": "Riadh Fezzani",
-				"label": "Doctor in applied mathematics",
-				"picture": null,
-				"email": "<rfezzani@gmail.com>",
-				"phone": "+33 6 75 86 21 97",
-				"website": "https://rfezzani.github.io",
-				"summary": "Autonomous and curious, 8 years of experience including a Ph.D., I
-                    appreciate multidisciplinary environments and the
-                    implementation of efficient algorithms.<br>
-                    I support open source projects and promote the [KISS
-                    principle](https://en.wikipedia.org/wiki/KISS_principle).",
-				"location": {
-						"address": "154 avenue Marx Dormoy",
-						"postalCode": "92120",
-						"city": "Montrouge",
-						"countryCode": "FR",
-						"region": "France"
-				},
-				"profiles": [
-						{
-								"network": "Github",
-								"username": "rfezzani",
-								"url": "https://github.com/rfezzani"
-						}
-				]
-		},
-		"work": [
-				{
-						"company": "Ausy",
-						"position": "Engineer",
-						"website": "http://www.ausy.fr/fr",
-						"startDate": "2014-11-13",
-						"endDate": null,
-						"duration": null,
-						"summary": "I actually work in the R&D departement of [**Océ - A Canon
-                        compagny**](http://oce.com/), within the
-                        [**Eiger
-                        project**](http://www.projecteiger.com/) (high
-                        resolution, large format and full color
-                        **2.5D** and **3D** printing). My work
-                        consists in developping multiple tools for the
-                        visualization and the manipulation of digital
-                        3D objects. During this mission, I
-                        participated to three patent filings.",
-						"highlights": [
-								"Mesh voxelization",
-								"<abbr title=\"Sparse Voxel Octree\">SVO</abbr> data structure",
-								"Volume slicing",
-								"Realtime visualization",
-								"Photorealism",
-								"Height map and texture generation",
-								"Cutpath generation",
-								"Blender plugin"
-						]
-				},
-				{
-						"company": "<abbr title=\"Institut d&#39;Optique Graduate School\">IOGS</abbr>",
-						"position": "Postdoctoral research",
-						"website": "https://www.institutoptique.fr/",
-						"startDate": "2013-06-01",
-						"endDate": "2014-11-10",
-						"duration": "18 monthes",
-						"summary": "Within the [<abbr title=\"Systèmes d&#39;Imagerie et Physique des
-                        Images\">SPIM</abbr>](https://www.lcf.institutoptique.fr/Groupes-de-recherche/SPIM)
-                        team in the _laboratoire Charles Fabry_, I
-                        worked in the context of the
-                        [**Reveal**](http://www.agence-nationale-recherche.fr/?Project=ANR-12-TECS-0015)
-                        project in close collaboration with the
-                        **iMove** team at
-                        [**ONERA**](http://www.onera.fr/), the
-                        [**Institut de la
-                        Vision**](http://www.institut-vision.org/en/)
-                        and [**Imagine
-                        Eyes**](http://www.imagine-eyes.com/) on the
-                        design of efficient algorithms for the
-                        processing of eye fundus images aquired with
-                        an adaptive optics camera.",
-						"highlights": [
-								"Code acceleration and optimization",
-								"Fast image registration",
-								"Image enhancement",
-								"Acquisition area detection (mutual information maximization)",
-								"Blood vessel activity detection",
-								"UI for data base manipulation"
-						]
-				},
-				{
-						"company": "<abbr title=\"Institut National de Recherche en Informatique et en
-                        Automatique\">INRIA</abbr>",
-						"position": "Postdoctoral research",
-						"website": "http://www.inria.fr/",
-						"startDate": "2011-03-01",
-						"endDate": "2013-05-30",
-						"duration": "2 years",
-						"summary": "Within the **PARALL** team in the [<abbr title=\"Laboratoire de
-                        recherche en
-                        informatique\">LRI</abbr>](https://www.lri.fr/),
-                        I worked in the context of the
-                        [**PetalH**](http://petal.saclay.inria.fr/)
-                        project on the design of new parallel
-                        preconditioners made for the acceleration of
-                        the resolution of large ill-conditioned sparse
-                        linear systems.",
-						"highlights": [
-								"Sparse linear algebra",
-								"Iterative linear solver",
-								"Preconditionning",
-								"Sparse matrix graph reordering",
-								"Domain decomposition",
-								"Approximate block LDU factorization with filtering constraints",
-								"Low-rank approximation"
-						]
-				},
-				{
-						"company": "<abbr title=\"Office Nationale d&#39;Étude et de Recherches
-Aérospatiales\">ONERA</abbr>",
-						"position":
-						"Ph.D. thesis",
-						"website": "http://www.onera.fr/",
-						"startDate": "2007-11-01",
-						"endDate": "2011-01-31",
-						"duration": "3 years",
-						"summary": "In the hight performance computing team (<abbr title=\"Département du
-						            Traitrement de l&#39;Information et
-						            Modélisation/ Calcul Haute
-						            Performance\">DTIM/CHP</abbr>), \"Parallel
-						            approach for optical flow estimation by
-						            variational method\" (Advisors: Frédéric
-						            _Champagnat_ and François-Xavier _Roux_).",
-						"highlights": [
-								"Combined local gloal approach",
-								"Total variation regularization",
-								"Picard/SOR solver",
-								"Color labeling",
-								"Variable splitting",
-								"High performance computing (multithreading, GPGPU)",
-								"Particle image velocimetry"
-						]
-				},
-				{
-						"company": "<abbr title=\"Centre Européen de Recherche et de Formation Avancée en
-                        Calcul Scientifique\">CERFACS</abbr>",
-						"position": "Internship",
-						"website": "http://cerfacs.fr/en/",
-						"startDate": "2007-04-01",
-						"endDate": "2007-09-30",
-						"duration": "6 monthes",
-						"summary": "In the parallel algorithms team, in collaboration with [<abbr
-                        title=\"The Innovative Computing
-                        Laboratory\">ICL</abbr>](http://www.icl.utk.edu/)
-                        from the university of Tennessee: \"Study of
-                        the parallelization of the \\\\(LDL^T\\\\)
-                        factorization in the symmetric indefinite
-                        case\" (Advisor: Marc _Baboulin_).",
-						"highlights": [
-								"Dense Linear Algebra",
-								"Direct linear solver",
-								"\\\\(LDL^T\\\\) factorization"
-						]
-				}
-		],
-		"volunteer": [
-				{
-						"organization": "<abbr title=\"Optical Society of America\">OSA</abbr>, <abbr
-														 title=\"International Parallel & Distributed Processing
-														 Symposium\">IPDPS</abbr>, <abbr title=\"Parallel Computing
-                             Journal\">PARCO</abbr>",
-						"position": "Journal and conference reviewer",
-						"website": null,
-						"startDate": null,
-						"endDate": null,
-						"summary": null,
-						"highlights": []
-				},
-				{
-						"organization": "<abbr title=\"Club Olympique Multisports de Bagneux\">COMB Rugby</abbr>",
-						"position": "Rugby coach",
-						"website": "http://www.combagneux.fr/sections/rugby/rugby.html",
-						"startDate": "2010-09-01",
-						"endDate": null,
-						"summary": null,
-						"highlights": []
-				}],
-		"education": [
-				{
-						"institution": "Université Pierre et Marie Curie (Paris VI)",
-						"area": "Applied mathematics",
-						"studyType": "Ph.D.",
-						"startDate": "2007-11-01",
-						"endDate": "2011-01-31",
-						"gpa": null,
-						"courses": []
-				},
-				{
-						"institution": "Université Paul Sabatier (Toulouse III)",
-						"area": "Mathematical modeling and computer science",
-						"studyType": "M.D.",
-						"startDate": "2006-09-01",
-						"endDate": "2007-06-31",
-						"gpa": null,
-						"courses": []
-				}
-		],
-		"awards": [],
-		"publications": [
-				{
-						"title": "Fine estimation of retinal vascular motions in images sequences
-                      acquired by an adaptive optics retinal camera",
-						"publisher": "OSA Imaging and Applied Optics Congress",
-						"releaseDate": "2016-05-01",
-						"website": "https://www.osapublishing.org/abstract.cfm?uri=AOMS-2016-AOM3C.3",
-						"authors": "C. Kulcsár, J. Benesty, G. Le Besnerais, R. Fezzani, M. Paques.",
-						"summary": null
-				},
-				{
-						"title": "Fast and robust image registration with local motion estimation for
-                      image enhancement and activity detection in retinal imaging",
-						"publisher": "IEEE International Workshop Computational Intelligence for Multimedia
-                          Understanding (IWCIM 2014)",
-						"releaseDate": "2014-11-01",
-						"website": "http://ieeexplore.ieee.org/document/7008811/",
-						"authors": "C. Kulcsár, R. Fezzani, G. Le Besnerais, A. Plyer, X. Levecq.",
-						"summary": null
-				},
-				{
-						"title": "Unsupervised registration of Adaptive Optics retinal images in SLO
-                      fundus images",
-						"publisher": "The association for research in vision and ophtalmology meeting",
-						"releaseDate": "2014-05-01",
-						"website": "http://iovs.arvojournals.org/article.aspx?articleid=2270365",
-						"authors": "R. Fezzani, P. Cornic, E. Boyenga Ödlund, A. Plyer, G. Le Besnerais, C. Kulcsár.",
-						"summary": null
-				},
-				{
-						"title": "Traitement rapide et robuste d&#39;images issues d&#39;une caméra
-                      rétinienne",
-						"publisher": "Journées Recherche Industrie de l&#39;Optique Adaptative",
-						"releaseDate": "2013-02-01",
-						"website": null,
-						"authors": "R. Fezzani, C. Kulcsár, G. Le Besnerais, A. Plyer and E. Boyenga Ödlund.",
-						"summary": null
-				},
-				{
-						"title": "Using Overlapping and Filtering Techniques for Highly Parallel
-                      Preconditioners",
-						"publisher": "SIAM Conference on Parallel Processing for Scientific Computing",
-						"releaseDate": "2012-09-01",
-						"website": null,
-						"authors": "L. Qu, L. Grigori, F. Nataf, R. Fezzani.",
-						"summary": null
-				},
-				{
-						"title": "Sparse/Low-rank Block Filtering Decomposition",
-						"publisher": "International Workshop on Parallel Matrix Algorithms and Applications",
-						"releaseDate": "2012-06-29",
-						"website": null,
-						"authors": "R. Fezzani, L. Grigori, F. Nataf.",
-						"summary": null
-				},
-				{
-						"title": "Block Filtering Decomposition",
-						"publisher": "Numerical Linear Algebra with Applications",
-						"releaseDate": "2014-01-01",
-						"website": "http://onlinelibrary.wiley.com/doi/10.1002/nla.1921/abstract",
-						"authors": "R. Fezzani, L. Grigori, F. Nataf, K. Wang.",
-						"summary": null
-				},
-				{
-						"title": "Approche parallèle pour l&#39;estimation du flot optique par méthode
-                      variationnelle",
-						"publisher": "Pierre and Marie Curie University",
-						"releaseDate": "2011-06-10",
-						"website": "https://tel.archives-ouvertes.fr/tel-00713970/",
-						"authors": "Ph.D thesis in applied mathematic",
-						"summary": null
-				},
-				{
-						"title": "Combined local-global approach in PIV processing: a better trade-off
-                      between noise and resolution",
-						"publisher": "9th International symposium on particle image velocimetry",
-						"releaseDate": "2011-07-21",
-						"website": "http://publications.onera.fr/exl-php/docs/ILS_DOC/263286/DOC396262_s1.pdf",
-						"authors": "R. Fezzani, F. Champagnat, G. Le Besnerais, B. Leclaire, S. Davoust, Y. Le Sant.",
-						"summary": null
-				},
-				{
-						"title": "Clarifying the implementation of warping in the combined 
-                      local global method for optic flow computation",
-						"publisher": "European Signal Processing Conference",
-						"releaseDate": "2010-08-25",
-						"website": "http://www.eurasip.org/Proceedings/Eusipco/Eusipco2010/Contents/papers/1569292603.pdf",
-						"authors": "R. Fezzani, F. Champagnat, G. Le Besnerais.",
-						"summary": null
-				},
-				{
-						"title": "Advanced processing methods for image-based displacement measurement",
-						"publisher": "Aerospace Lab Journal, num. 1",
-						"releaseDate": "2009-12-01",
-						"website": "http://www.aerospacelab-journal.org/sites/www.aerospacelab-journal.org/files/Al1-04.pdf",
-						"authors": "G. Le Besnerais, F. Champagnat, A. plyer, R. Fezzani, B. Leclaire, Y. Le Sant.",
-						"summary": null
-				}
-		],
-		"skills": [
-				{
-						"name": "Programming",
-    				"level": "Master",
-						"keywords": [
-								"C/C++",
-								"Python",
-								"Matlab",
-								"HTML5/javascript",
-								"Qt",
-								"Git"]
-				},
-				{
-						"name": "High performance computing",
-    				"level": "Master",
-						"keywords": [
-								"Multithreading",
-								"GPGPU",
-								"openMP",
-								"CUDA",
-								"openCL",
-								"Metis/Scotch"]
-				},
-				{
-						"name": "Image processing",
-    				"level": "Master",
-						"keywords": [
-								"Optical flow",
-								"Registration",
-								"Stitching",
-								"Template matching",
-								"Segmentation",
-								"Active contours",
-								"openCV",
-								"Matplotlib",
-								"scikit-image"]
-				},
-				{
-						"name": "Linear algebra",
-    				"level": "Master",
-						"keywords": [
-								"Dense and sparse systems",
-								"Direct and iterative solvers",
-								"Preconditionning",
-								"Low-rank approximation",
-								"BLAS/LAPACK",
-								"Numpy/Scipy"]
-				},
-				{
-						"name": "3D",
-						"level": "Master",
-						"keywords": [
-								"Ray tracing",
-								"Shading",
-								"openGL/GLSL",
-								"Blender",
-								"VTK"]
-				}
-		],
-		"languages": [
-				{
-						"name": "French",
-						"level": "Native speaker"
-				},
-				{
-						"name": "Arabic",
-						"level": "Native speaker"
-				},
-				{
-						"name": "English",
-						"level": "Fluent"
-				}
-		],
-		"interests": [],
-		"references": []
+  "basics": {
+    "name": "Riadh Fezzani",
+    "label": "Doctor in applied mathematics",
+    "picture": null,
+    "email": "<rfezzani@gmail.com>",
+    "phone": "+33 6 75 86 21 97",
+    "website": "https://rfezzani.github.io",
+    "summary": "Autonomous and curious, 8 years of experience, I appreciate multidisciplinary environments and the implementation of efficient algorithms.<br> I support open source projects and promote the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle).",
+    "location": {
+      "address": "154 avenue Marx Dormoy",
+      "postalCode": "92120",
+      "city": "Montrouge",
+      "countryCode": "FR",
+      "region": "France"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "rfezzani",
+        "url": "https://github.com/rfezzani"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Ausy",
+      "position": "Engineer",
+      "website": "http://www.ausy.fr/fr",
+      "startDate": "2014-11-13",
+      "endDate": null,
+      "duration": null,
+      "summary": "I actually work in the R&D departement of [**Océ - A Canon compagny**](http://oce.com/), within the [**Eiger project**](http://www.projecteiger.com/) (high resolution, large format and full color **2.5D** and **3D** printing). My work consists in developping multiple tools for the visualization and the manipulation of digital 3D objects. During this mission, I participated to three patent filings.",
+      "highlights": [
+        "Mesh voxelization",
+        "<abbr title=\"Sparse Voxel Octree\">SVO</abbr> data structure",
+        "Volume slicing",
+        "Realtime visualization",
+        "Photorealism",
+        "Height map and texture generation",
+        "Cutpath generation",
+        "Blender plugin"
+      ]
+    },
+    {
+      "company": "<abbr title=\"Institut d&#39;Optique Graduate School\">IOGS</abbr>",
+      "position": "Postdoctoral research",
+      "website": "https://www.institutoptique.fr/",
+      "startDate": "2013-06-01",
+      "endDate": "2014-11-10",
+      "duration": "18 monthes",
+      "summary": "Within the [<abbr title=\"Systèmes d&#39;Imagerie et Physique des Images\">SPIM</abbr>](https://www.lcf.institutoptique.fr/Groupes-de-recherche/SPIM) team in the _laboratoire Charles Fabry_, I worked in the context of the [**Reveal**](http://www.agence-nationale-recherche.fr/?Project=ANR-12-TECS-0015) project in close collaboration with the **iMove** team at [**ONERA**](http://www.onera.fr/), the [**Institut de la Vision**](http://www.institut-vision.org/en/) and [**Imagine Eyes**](http://www.imagine-eyes.com/) on the design of efficient algorithms for the processing of eye fundus images aquired with an adaptive optics camera.",
+      "highlights": [
+        "Code acceleration and optimization",
+        "Fast image registration",
+        "Image enhancement",
+        "Acquisition area detection (mutual information maximization)",
+        "Blood vessel activity detection",
+        "UI for data base manipulation"
+      ]
+    },
+    {
+      "company": "<abbr title=\"Institut National de Recherche en Informatique et en Automatique\">INRIA</abbr>",
+      "position": "Postdoctoral research",
+      "website": "http://www.inria.fr/",
+      "startDate": "2011-03-01",
+      "endDate": "2013-05-30",
+      "duration": "2 years",
+      "summary": "Within the **PARALL** team in the [<abbr title=\"Laboratoire de recherche en informatique\">LRI</abbr>](https://www.lri.fr/), I worked in the context of the [**PetalH**](http://petal.saclay.inria.fr/) project on the design of new parallel preconditioners made for the acceleration of the resolution of large ill-conditioned sparse linear systems.",
+      "highlights": [
+        "Sparse linear algebra",
+        "Iterative linear solver",
+        "Preconditionning",
+        "Sparse matrix graph reordering",
+        "Domain decomposition",
+        "Approximate block LDU factorization with filtering constraints",
+        "Low-rank approximation"
+      ]
+    },
+    {
+      "company": "<abbr title=\"Office Nationale d&#39;Étude et de Recherches Aérospatiales\">ONERA</abbr>",
+      "position":
+      "Ph.D. thesis",
+      "website": "http://www.onera.fr/",
+      "startDate": "2007-11-01",
+      "endDate": "2011-01-31",
+      "duration": "3 years",
+      "summary": "In the hight performance computing team (<abbr title=\"Département du Traitrement de l&#39;Information et Modélisation/ Calcul Haute Performance\">DTIM/CHP</abbr>), \"Parallel approach for optical flow estimation by variational method\" (Advisors: Frédéric _Champagnat_ and François-Xavier _Roux_).",
+      "highlights": [
+        "Combined local gloal approach",
+        "Total variation regularization",
+        "Picard/SOR solver",
+        "Color labeling",
+        "Variable splitting",
+        "High performance computing (multithreading, GPGPU)",
+        "Particle image velocimetry"
+      ]
+    },
+    {
+      "company": "<abbr title=\"Centre Européen de Recherche et de Formation Avancée en Calcul Scientifique\">CERFACS</abbr>",
+      "position": "Internship",
+      "website": "http://cerfacs.fr/en/",
+      "startDate": "2007-04-01",
+      "endDate": "2007-09-30",
+      "duration": "6 monthes",
+      "summary": "In the parallel algorithms team, in collaboration with [<abbr title=\"The Innovative Computing Laboratory\">ICL</abbr>](http://www.icl.utk.edu/) from the university of Tennessee: \"Study of the parallelization of the \\\\(LDL^T\\\\) factorization in the symmetric indefinite case\" (Advisor: Marc _Baboulin_).",
+      "highlights": [
+        "Dense Linear Algebra",
+        "Direct linear solver",
+        "\\\\(LDL^T\\\\) factorization"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "<abbr title=\"Optical Society of America\">OSA</abbr>, <abbr title=\"International Parallel & Distributed Processing Symposium\">IPDPS</abbr>, <abbr title=\"Parallel Computing Journal\">PARCO</abbr>",
+      "position": "Journal and conference reviewer",
+      "website": null,
+      "startDate": null,
+      "endDate": null,
+      "summary": null,
+      "highlights": []
+    },
+    {
+      "organization": "<abbr title=\"Club Olympique Multisports de Bagneux\">COMB Rugby</abbr>",
+      "position": "Rugby coach",
+      "website": "http://www.combagneux.fr/sections/rugby/rugby.html",
+      "startDate": "2010-09-01",
+      "endDate": null,
+      "summary": null,
+      "highlights": []
+    }],
+  "education": [
+    {
+      "institution": "Université Pierre et Marie Curie (Paris VI)",
+      "area": "Applied mathematics",
+      "studyType": "Ph.D.",
+      "startDate": "2007-11-01",
+      "endDate": "2011-01-31",
+      "gpa": null,
+      "courses": []
+    },
+    {
+      "institution": "Université Paul Sabatier (Toulouse III)",
+      "area": "Mathematical modeling and computer science",
+      "studyType": "M.D.",
+      "startDate": "2006-09-01",
+      "endDate": "2007-06-31",
+      "gpa": null,
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [
+    {
+      "title": "Fine estimation of retinal vascular motions in images sequences acquired by an adaptive optics retinal camera",
+      "publisher": "OSA Imaging and Applied Optics Congress",
+      "releaseDate": "2016-05-01",
+      "website": "https://www.osapublishing.org/abstract.cfm?uri=AOMS-2016-AOM3C.3",
+      "authors": "C. Kulcsár, J. Benesty, G. Le Besnerais, R. Fezzani, M. Paques.",
+      "summary": null
+    },
+    {
+      "title": "Fast and robust image registration with local motion estimation for image enhancement and activity detection in retinal imaging",
+      "publisher": "IEEE International Workshop Computational Intelligence for Multimedia Understanding (IWCIM 2014)",
+      "releaseDate": "2014-11-01",
+      "website": "http://ieeexplore.ieee.org/document/7008811/",
+      "authors": "C. Kulcsár, R. Fezzani, G. Le Besnerais, A. Plyer, X. Levecq.",
+      "summary": null
+    },
+    {
+      "title": "Unsupervised registration of Adaptive Optics retinal images in SLO fundus images",
+      "publisher": "The association for research in vision and ophtalmology meeting",
+      "releaseDate": "2014-05-01",
+      "website": "http://iovs.arvojournals.org/article.aspx?articleid=2270365",
+      "authors": "R. Fezzani, P. Cornic, E. Boyenga Ödlund, A. Plyer, G. Le Besnerais, C. Kulcsár.",
+      "summary": null
+    },
+    {
+      "title": "Traitement rapide et robuste d&#39;images issues d&#39;une caméra rétinienne",
+      "publisher": "Journées Recherche Industrie de l&#39;Optique Adaptative",
+      "releaseDate": "2013-02-01",
+      "website": null,
+      "authors": "R. Fezzani, C. Kulcsár, G. Le Besnerais, A. Plyer and E. Boyenga Ödlund.",
+      "summary": null
+    },
+    {
+      "title": "Using Overlapping and Filtering Techniques for Highly Parallel Preconditioners",
+      "publisher": "SIAM Conference on Parallel Processing for Scientific Computing",
+      "releaseDate": "2012-09-01",
+      "website": null,
+      "authors": "L. Qu, L. Grigori, F. Nataf, R. Fezzani.",
+      "summary": null
+    },
+    {
+      "title": "Sparse/Low-rank Block Filtering Decomposition",
+      "publisher": "International Workshop on Parallel Matrix Algorithms and Applications",
+      "releaseDate": "2012-06-29",
+      "website": null,
+      "authors": "R. Fezzani, L. Grigori, F. Nataf.",
+      "summary": null
+    },
+    {
+      "title": "Block Filtering Decomposition",
+      "publisher": "Numerical Linear Algebra with Applications",
+      "releaseDate": "2014-01-01",
+      "website": "http://onlinelibrary.wiley.com/doi/10.1002/nla.1921/abstract",
+      "authors": "R. Fezzani, L. Grigori, F. Nataf, K. Wang.",
+      "summary": null
+    },
+    {
+      "title": "Approche parallèle pour l&#39;estimation du flot optique par méthode variationnelle",
+      "publisher": "Pierre and Marie Curie University",
+      "releaseDate": "2011-06-10",
+      "website": "https://tel.archives-ouvertes.fr/tel-00713970/",
+      "authors": "Ph.D thesis in applied mathematic",
+      "summary": null
+    },
+    {
+      "title": "Combined local-global approach in PIV processing: a better trade-off between noise and resolution",
+      "publisher": "9th International symposium on particle image velocimetry",
+      "releaseDate": "2011-07-21",
+      "website": "http://publications.onera.fr/exl-php/docs/ILS_DOC/263286/DOC396262_s1.pdf",
+      "authors": "R. Fezzani, F. Champagnat, G. Le Besnerais, B. Leclaire, S. Davoust, Y. Le Sant.",
+      "summary": null
+    },
+    {
+      "title": "Clarifying the implementation of warping in the combined  local global method for optic flow computation",
+      "publisher": "European Signal Processing Conference",
+      "releaseDate": "2010-08-25",
+      "website": "http://www.eurasip.org/Proceedings/Eusipco/Eusipco2010/Contents/papers/1569292603.pdf",
+      "authors": "R. Fezzani, F. Champagnat, G. Le Besnerais.",
+      "summary": null
+    },
+    {
+      "title": "Advanced processing methods for image-based displacement measurement",
+      "publisher": "Aerospace Lab Journal, num. 1",
+      "releaseDate": "2009-12-01",
+      "website": "http://www.aerospacelab-journal.org/sites/www.aerospacelab-journal.org/files/Al1-04.pdf",
+      "authors": "G. Le Besnerais, F. Champagnat, A. plyer, R. Fezzani, B. Leclaire, Y. Le Sant.",
+      "summary": null
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming",
+      "level": "Master",
+      "keywords": [
+        "C/C++",
+        "Python",
+        "Matlab",
+        "HTML5/javascript",
+        "Qt",
+        "Git"]
+    },
+    {
+      "name": "High performance computing",
+      "level": "Master",
+      "keywords": [
+        "Multithreading",
+        "GPGPU",
+        "openMP",
+        "CUDA",
+        "openCL",
+        "Metis/Scotch"]
+    },
+    {
+      "name": "Image processing",
+      "level": "Master",
+      "keywords": [
+        "Optical flow",
+        "Registration",
+        "Stitching",
+        "Template matching",
+        "Segmentation",
+        "Active contours",
+        "openCV",
+        "Matplotlib",
+        "scikit-image"]
+    },
+    {
+      "name": "Linear algebra",
+      "level": "Master",
+      "keywords": [
+        "Dense and sparse systems",
+        "Direct and iterative solvers",
+        "Preconditionning",
+        "Low-rank approximation",
+        "BLAS/LAPACK",
+        "Numpy/Scipy"]
+    },
+    {
+      "name": "3D",
+      "level": "Master",
+      "keywords": [
+        "Ray tracing",
+        "Shading",
+        "openGL/GLSL",
+        "Blender",
+        "VTK"]
+    }
+  ],
+  "languages": [
+    {
+      "name": "French",
+      "level": "Native speaker"
+    },
+    {
+      "name": "Arabic",
+      "level": "Native speaker"
+    },
+    {
+      "name": "English",
+      "level": "Fluent"
+    }
+  ],
+  "interests": [],
+  "references": []
 }
