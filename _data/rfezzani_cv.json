@@ -1,12 +1,12 @@
 {
   "basics": {
-    "name": "Riadh Fezzani",
-    "label": "Doctor in applied mathematics",
+    "name": "Riadh Fezzani, Ph. D.",
+    "label": "R&D engineer in applied mathematics",
     "picture": null,
     "email": "<rfezzani@gmail.com>",
     "phone": "+33 6 75 86 21 97",
     "website": "https://rfezzani.github.io",
-    "summary": "Autonomous and curious, 8 years of experience, I appreciate multidisciplinary environments and the implementation of efficient algorithms.<br> I support open source projects and promote the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle).",
+    "summary": "Autonomous and curious, 12 years of experience, I appreciate multidisciplinary environments and the implementation of efficient algorithms.<br> I support open source projects and promote the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle).",
     "location": {
       "address": "154 avenue Marx Dormoy",
       "postalCode": "92120",
@@ -24,13 +24,28 @@
   },
   "work": [
     {
+      "company": "VitaDX",
+      "position": "R&D engineer",
+      "website": "http://www.ausy.fr/fr",
+      "startDate": "2017-10-01",
+      "endDate": null,
+      "duration": "9 years",
+      "summary": "I actually work in the R&D team of [**VitaDX**](https://vitadx.com/) in the context of the [**Visiocyt**](https://patient.visiocyt.com/) medical software.I am involved in the design and the development of the bladder diagnosis pipeline, based on the analysis of large whole slide images of urine cytology. I co-directed a Ph. D. student and advised multiple trainee. I also participated in the filling of three patent filings",
+      "highlights": [
+        "Multi-layer <abbr title=\"Whole Slide Images\">WSI</abbr> classification",
+        "Cell type classification",
+        "Cell nuclei segmentation",
+        "Medical software development (ISO 62304)"
+      ]
+    },
+    {
       "company": "Ausy",
       "position": "Engineer",
       "website": "http://www.ausy.fr/fr",
       "startDate": "2014-11-13",
-      "endDate": null,
-      "duration": null,
-      "summary": "I actually work in the R&D departement of [**Océ - A Canon compagny**](http://oce.com/), within the [**Eiger project**](http://www.projecteiger.com/) (high resolution, large format and full color **2.5D** and **3D** printing). My work consists in developping multiple tools for the visualization and the manipulation of digital 3D objects. During this mission, I participated to three patent filings.",
+      "endDate": "2017-09-30",
+      "duration": "3 years",
+      "summary": "In the R&D departement of [**Océ - A Canon compagny**](http://oce.com/), within the [**Eiger project**](https://www.color.org/events/taipei/4-Elevated_printing_Oce_use_cases.pdf) (high resolution, large format and full color **2.5D** and **3D** printing), my work consisted in developping multiple tools for the visualization and the manipulation of digital 3D objects. During this mission, I participated to three patent filings.",
       "highlights": [
         "Mesh voxelization",
         "<abbr title=\"Sparse Voxel Octree\">SVO</abbr> data structure",
@@ -38,8 +53,7 @@
         "Realtime visualization",
         "Photorealism",
         "Height map and texture generation",
-        "Cutpath generation",
-        "Blender plugin"
+        "Cutpath generation"
       ]
     },
     {
@@ -89,29 +103,23 @@
       "highlights": [
         "Combined local gloal approach",
         "Total variation regularization",
-        "Picard/SOR solver",
-        "Color labeling",
-        "Variable splitting",
         "High performance computing (multithreading, GPGPU)",
         "Particle image velocimetry"
-      ]
-    },
-    {
-      "company": "<abbr title=\"Centre Européen de Recherche et de Formation Avancée en Calcul Scientifique\">CERFACS</abbr>",
-      "position": "Internship",
-      "website": "http://cerfacs.fr/en/",
-      "startDate": "2007-04-01",
-      "endDate": "2007-09-30",
-      "duration": "6 monthes",
-      "summary": "In the parallel algorithms team, in collaboration with [<abbr title=\"The Innovative Computing Laboratory\">ICL</abbr>](http://www.icl.utk.edu/) from the university of Tennessee: \"Study of the parallelization of the \\\\(LDL^T\\\\) factorization in the symmetric indefinite case\" (Advisor: Marc _Baboulin_).",
-      "highlights": [
-        "Dense Linear Algebra",
-        "Direct linear solver",
-        "\\\\(LDL^T\\\\) factorization"
       ]
     }
   ],
   "volunteer": [
+    {
+      "organization": "Scikit Image, pyimof, scipy, keras, conda",
+      "position": "Open source software contribution",
+      "website": "https://github.com/rfezzani",
+      "startDate": null,
+      "endDate": null,
+      "summary": null,
+      "highlights": [
+        "Scikit-Image core team member from 2019 to 2022"
+      ]
+    },
     {
       "organization": "<abbr title=\"Optical Society of America\">OSA</abbr>, <abbr title=\"International Parallel & Distributed Processing Symposium\">IPDPS</abbr>, <abbr title=\"Parallel Computing Journal\">PARCO</abbr>",
       "position": "Journal and conference reviewer",
@@ -123,7 +131,7 @@
     },
     {
       "organization": "<abbr title=\"Club Olympique Multisports de Bagneux\">COMB Rugby</abbr>",
-      "position": "Rugby coach",
+      "position": "Rugby player/coach",
       "website": "http://www.combagneux.fr/sections/rugby/rugby.html",
       "startDate": "2010-09-01",
       "endDate": null,
@@ -243,28 +251,6 @@
   ],
   "skills": [
     {
-      "name": "Programming",
-      "level": "Master",
-      "keywords": [
-        "C/C++",
-        "Python",
-        "Matlab",
-        "HTML5/javascript",
-        "Qt",
-        "Git"]
-    },
-    {
-      "name": "High performance computing",
-      "level": "Master",
-      "keywords": [
-        "Multithreading",
-        "GPGPU",
-        "openMP",
-        "CUDA",
-        "openCL",
-        "Metis/Scotch"]
-    },
-    {
       "name": "Image processing",
       "level": "Master",
       "keywords": [
@@ -273,10 +259,35 @@
         "Stitching",
         "Template matching",
         "Segmentation",
-        "Active contours",
-        "openCV",
-        "Matplotlib",
-        "scikit-image"]
+        "classification"
+      ]
+    },
+    {
+      "name": "Programming",
+      "level": "Master",
+      "keywords": [
+        "Python",
+        "Matlab",
+        "C/C++",
+        "Git"
+      ]
+    },
+    {
+      "name": "Machine learning",
+      "level": "Master",
+      "keywords": [
+        "<abbr title=\"Multiple Instance Learning\">MIL</abbr>",
+        "Anomaly detection",
+        "Imbalanced dataset"
+      ]
+    },
+    {
+      "name": "High performance computing",
+      "level": "Master",
+      "keywords": [
+        "Multithreading (openMP)",
+        "GPGPU (CUDA)"
+      ]
     },
     {
       "name": "Linear algebra",
@@ -285,19 +296,16 @@
         "Dense and sparse systems",
         "Direct and iterative solvers",
         "Preconditionning",
-        "Low-rank approximation",
-        "BLAS/LAPACK",
-        "Numpy/Scipy"]
+        "Low-rank approximation"
+      ]
     },
     {
-      "name": "3D",
+      "name": "3D visualization",
       "level": "Master",
       "keywords": [
         "Ray tracing",
-        "Shading",
-        "openGL/GLSL",
-        "Blender",
-        "VTK"]
+        "Shading (openGL/GLSL)"
+      ]
     }
   ],
   "languages": [
@@ -306,12 +314,12 @@
       "level": "Native speaker"
     },
     {
-      "name": "Arabic",
-      "level": "Native speaker"
-    },
-    {
       "name": "English",
       "level": "Fluent"
+    },
+    {
+      "name": "Arabic",
+      "level": "Native speaker"
     }
   ],
   "interests": [],
